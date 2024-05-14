@@ -1,0 +1,234 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/guideline.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="sidebar-item sidebar">
+                <div class="make-me-sticky">
+                    <div style="padding: 20px 0;">
+                        <h1 class="sidebar-heading">Quick Access</h1>
+                        <ul class="nav_list" style="padding-left: 0;">
+                            <li class="list-item list-test" data-tooltip="Codepen">
+                                <a href="#home" class="genre-element">
+                                    <span class="sidebar-element text">Home Page</span>
+                                </a>
+                            </li>
+
+                            <li class="list-item list-test" data-tooltip="Codepen">
+                                <a href="#navigation" class="genre-element">
+                                    <span class="sidebar-element text">Navbar</span>
+                                </a>
+                            </li>
+
+                            <li class="list-item list-test" data-tooltip="Codepen">
+                                <a href="#footer" class="genre-element">
+                                    <span class="sidebar-element text">Footer Quick Links</span>
+                                </a>
+                            </li>
+
+                            <li class="list-item" data-tooltip="Opera">
+                                <a href="#about" class="genre-element">
+                                    <span class="sidebar-element text">About Page</span>
+                                </a>
+                            </li>
+
+                            <!-- <li class="list-item" data-tooltip="CSS3">
+                                <a href="#register" class="genre-element">
+                                    <span class="sidebar-element text">Register Page</span>
+                                </a>
+                            </li>
+
+                            <li class="list-item" data-tooltip="Linux">
+                                <a href="#login" class="genre-element">
+                                    <span class="sidebar-element text">Login Page</span>
+                                </a>
+                            </li> -->
+
+
+                            <li class="list-item" data-tooltip="Firefox">
+                                <a href="#checkup" class="genre-element">
+                                    <span class="sidebar-element text">Checkup Page</span>
+                                </a>
+                            </li>
+
+                            <li class="list-item" data-tooltip="Facebook">
+                                <a href="#prevention" class="genre-element">
+                                    <span class="sidebar-element text">Manoeuvre Page</span>
+                                </a>
+                            </li>
+
+                            <li class="list-item" data-tooltip="CSS3">
+                                <a href="#news" class="genre-element">
+                                    <span class="sidebar-element text">Bulletin Page</span>
+                                </a>
+                            </li>
+                            <li class="list-item" data-tooltip="Facebook">
+                                <a href="#medibot" class="genre-element">
+                                    <span class="sidebar-element text">Intro to Medibot</span>
+                                </a>
+                            </li>
+
+                            <!-- <li class="list-item" data-tooltip="CSS3">
+                                <a href="#account" class="genre-element">
+                                    <span class="sidebar-element text">Account Page</span>
+                                </a>
+                            </li> -->
+
+                            <li class="list-item" data-tooltip="Python">
+                                <a href="#faq" class="genre-element">
+                                    <span class="sidebar-element text">FAQ Page</span>
+                                </a>
+                            </li>
+
+                            <li class="list-item" data-tooltip="Settings">
+                                <a href="#terms" class="genre-element">
+                                    <span class="sidebar-element text">Terms & Condition Page</span>
+                                </a>
+                            </li>
+                            <li class="list-item" data-tooltip="Settings">
+                                <a href="#number" class="genre-element">
+                                    <span class="sidebar-element text">Emergency Number</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9" style="margin-top: 150px;padding: 0 50px 10%;">
+            <h1 class="heading1">Step by Step</h1>
+            <h1 class="heading2">Guide To MediSphere</h1>
+            <div>
+                <h2 id="home">Home Page</h2>
+                <img src="{{url_for('static', filename='img/main.png')}}"
+                    class="guide-image inline-photo show-on-scroll" alt="">
+                <p>When you visit our site, the first page that will be visible to you is the home page as shown above.
+                </p>
+            </div>
+
+            <div>
+                <h2 id="navigation">Navigation Bar</h2>
+                <img src="{{url_for('static', filename='img/nav.png')}}" class="guide-image inline-photo show-on-scroll"
+                    style="height: 5%;" alt="">
+                <p>On all the pages at the top you will be able to see navigation bar to access other pages easily.</p>
+            </div>
+
+            <div>
+                <h2 id="footer">Footer</h2>
+                <img src="{{url_for('static', filename='img/footer.png')}}"
+                    class="guide-image inline-photo show-on-scroll" style="height: 15%;" alt="">
+                <p>Footer is provided on the home page and the about page at the bottom to provide you with the quick
+                    links. A quick link to the guide is also provide in footer so that you can easily access it from
+                    other pages. 'FAQ's' link will take you to the frequently asked questions. You can visit our social
+                    media sites and follow us by clicking on the given icons.</p>
+            </div>
+
+            <div>
+                <h2 id="about">About Page</h2>
+                <img src="{{url_for('static', filename='img/about.png')}}"
+                    class="guide-image inline-photo show-on-scroll" alt="">
+                <p>On the about page, you will be able to get a clear idea about the site. Information on the features
+                    and statistics are given on this page. You can also discover the developer of this application along
+                    with their social media handles. You have the newsletter subscription form on this page as well.
+                    Make sure to fill in your email address in it to get latest updates in health related technologies
+                    and treatements.</p>
+            </div>
+
+            <!-- <div>
+                <h2 id="register">Register Page</h2>
+                <img src="{{url_for('static', filename='img/register.png')}}" class="guide-image inline-photo show-on-scroll" alt="">
+                <p>On the register page, fill your information and click on register. You will be directed to the home page where message will appear confirming that you have registered successfully. </p>            
+            </div>
+            <div>
+                <h2 id="login">Login Page</h2>
+                <img src="{{url_for('static', filename='img/login.png')}}" class="guide-image inline-photo show-on-scroll" alt="">
+                <p>On the login page, enter your email and password to enter into your account. If you are a new user, then you will have to register first. To register click on 'Click here to register' link, after which you will be taken to register page as shown below.</p>            
+            </div> -->
+
+            <div>
+                <h2 id="checkup">Checkup Page</h2>
+                <img src="{{url_for('static', filename='img/checkup.png')}}"
+                    class="guide-image inline-photo show-on-scroll" alt="">
+                <p>Checkup page is the main focus of this web application. It is the destination which is most used by
+                    the users. Here you can diagnose the disease using the given symptoms.</p>
+            </div>
+
+            <div>
+                <h2 id="how_checkup">How to do checkup?</h2>
+                <p>Follow the folllowing steps to diagnose diseases:- </p>
+                <ol>
+                    <li>Fill Symptom 1 from the given list of symptoms</li>
+                    <li>Fill Symptom 2 from the given list of symptoms</li>
+                    <li>Fill Symptom 3 from the given list of symptoms</li>
+                    <li>Fill Symptom 4 from the given list of symptoms</li>
+                    <li>Fill Symptom 5 from the given list of symptoms</li>
+                    <li>After filling all the symptoms, click on check now.</li>
+                    <li>You will be directed to page which will diagnose disease on the basis of symptoms.</li>
+                    <li>You can go and get checkup done one more time or you can checkout other page on our site.</li>
+                </ol>
+            </div>
+
+            <div>
+                <h2 id="medibot">Intro to Medibot</h2>
+                <img src="{{url_for('static', filename='img/bot.png')}}" class="guide-image inline-photo show-on-scroll"
+                    alt="">
+                <p>We have provided medibot for better experience of user. We will be improving it more in the coming
+                    time.</p>
+            </div>
+
+            <!-- <div>
+                <h2 id="account">Account Page</h2>
+                <img src="{{url_for('static', filename='img/account.png')}}" class="guide-image inline-photo show-on-scroll" alt="">
+                <p>On Account pageuser will be able to get his/her account details and update them.</p>
+            </div> -->
+
+            <div>
+                <h2 id="prevention">Manoeuvre Page</h2>
+                <img src="{{url_for('static', filename='img/prevention.png')}}"
+                    class="guide-image inline-photo show-on-scroll" alt="">
+                <p>On Manoeuvre page, you will be able to see prevention of some common diseases. Trending diseases and
+                    how to prevent them are also provided on the page. Some diseases which can be prevented by
+                    practicing yoga are also mentioned. Atlast a setion for inculcating healthy habits is given.</p>
+            </div>
+
+            <div>
+                <h2 id="news">Bulletin Page</h2>
+                <img src="{{url_for('static', filename='img/news.png')}}"
+                    class="guide-image inline-photo show-on-scroll" alt="">
+                <p>On Bulletin page, you will be able to see latest health related news from all over the world. A
+                    feature of finding health center nearby is also provided.</p>
+            </div>
+
+            <div>
+                <h2 id="faq">FAQ Page</h2>
+                <img src="{{url_for('static', filename='img/faq.png')}}" class="guide-image inline-photo show-on-scroll"
+                    alt="">
+                <p>On FAQ page, you will be able to see all the questions which are frequently asked by the user
+                    regarding Internsparks.</p>
+            </div>
+
+            <div>
+                <h2 id="terms">Terms & Condition Page</h2>
+                <img src="{{url_for('static', filename='img/terms.png')}}"
+                    class="guide-image inline-photo show-on-scroll" alt="">
+                <p>On Terms & conditions page, you will be able to see all terms and contions that have to be followed
+                    by the user while using our application.</p>
+            </div>
+
+            <div>
+                <h2 id="number">Emergency Number</h2>
+                <img src="{{url_for('static', filename='img/number.png')}}"
+                    class="guide-image inline-photo show-on-scroll" alt="">
+                <p>Emergency number for health related emergency are provided in the footer both common and statewise.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{{url_for('static', filename='js/guide.js')}}"></script>
+{% endblock %}

@@ -1,0 +1,230 @@
+@media (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	/* .navbar .nav-item:hover .nav-link{   } */
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+
+.navbar{
+	box-shadow: 2px 2px 5px #a1a1a1;
+}
+
+.navbar .navbar-brand{
+	font-size: 30px;
+	font-weight: bolder;
+	color: #ff4449;
+}
+
+ul{
+	list-style-type: none;
+	color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: black;
+	font-size: 18px;
+	padding: 25px 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+	background-color: #ff4449;
+	color: white;
+}
+
+.footer-nav{
+	padding: 10px;
+}
+
+.footer-nav a{
+	color: white;
+}
+
+.site-footer{
+	padding: 0;
+	background-color: rgb(15, 8, 58);
+}
+
+.wrap-size-lg{
+	padding: 50px;
+}
+
+.footer-heading{
+	font-size: 30px;
+	color: white;
+	font-size: 45px;
+	text-decoration: underline;
+	margin-bottom: 20px;
+}
+
+.footer-quote1{
+	padding: 32px 0;
+}
+
+.footer-quote2{
+	padding: 20px 0;
+}
+
+.footer-subheading{
+	color: white;
+	margin-top: 30px; 
+	margin-bottom: 57px;
+}
+
+.white-header{
+	color: white;
+}
+
+.footer-form-input{
+	background: none;
+	border: none; 
+	border-bottom: 2px solid white;
+	margin-bottom: 40px;
+	width: 80%;
+}
+
+.footer-form-button{
+	border: 2px solid white; 
+	padding: 10px 20px; 
+	color: white; 
+	border-radius: 40px;
+	background: none;
+}
+
+.fab{
+	font-size: 40px;
+	color: white;
+	margin: 0 20px;
+}
+
+.footer-link{
+    color: #095457;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-link:hover{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 80%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+	from {top:-300px; opacity:0} 
+	to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+	from {top:-300px; opacity:0}
+	to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  .modal-header {
+	padding: 2px 16px;
+	background-color: #3e7b83;
+	color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-body table{
+	width: -webkit-fill-available;
+  }
+  
+  .modal-body th, td{
+	padding: 5px 0 5px 100px;
+	background-color: rgba(255, 193, 182, 0.815);
+	width: 300px;
+  }
+  
+  .modal-footer {
+	padding: 2px 16px;
+	background-color: #3e7b83;
+	color: white;
+	display: block;
+  }
+  .emergency-heading{
+	color: white;
+	margin: 10px;
+  }
+  #table-wrapper {
+	position:relative;
+  }
+  #table-scroll {
+	height:120px;
+	overflow:auto;  
+	margin-top:20px;
+  }
+  #table-wrapper table {
+	width:100%;
+  
+  }
+  #table-wrapper table * {
+	color:black;
+  }
+  #table-wrapper table thead th .text {
+	position:absolute;   
+	top:-20px;
+	z-index:2;
+	height:30px;
+	width:35%;
+	background-color: tomato;
+	text-align: center;
+	padding: 5px;
+  }
+
+
+/* icon */
+  .icon{
+    height: 50px; 
+    width: 50px; 
+    border-radius: 50%; 
+    margin: 0 20px 0 40px;
+}

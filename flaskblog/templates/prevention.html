@@ -1,0 +1,1269 @@
+{%extends "layout.html"%}
+
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/prevention.css')}}">
+{% endblock %}
+
+{% block content %}
+<section class="animation" style="position: relative; overflow: hidden;">
+  <img class="car" src="../static/img/ambulance.png" alt="car">
+
+  <img class="bg-img" src="../static/img/m_background.png" alt="">
+  <h1 class="inner-div"
+    style="margin-top: 80px;position: absolute;top: 25vh;width: 50%;left: 5%;margin: 40px;font-size: 60px; color: darkcyan; font-weight: bolder;">
+    Prevention is better <br> than cure.</h1>
+  <h4 class="inner-div2"
+    style="margin-top: 80px;position: absolute;top: 47vh;width: 50%;left: 5%;margin: 40px;font-size: 20px; color: darkcyan; font-weight: bolder;">
+    Get started on prevention journey<br> With MediSphere</h4>
+  <div style="display: flex;flex-direction: column;">
+    <i class="trigger down-arrow fas fa-angle-down inner-div3" style="position: absolute;top: 65vh;left: 15%;"></i>
+    <i class="down-arrow fas fa-angle-down inner-div4" style="position: absolute;top: 68vh;left: 15%;"></i>
+    <i class="down-arrow fas fa-angle-down inner-div5" style="position: absolute;top: 71vh;left: 15%;"></i>
+  </div>
+
+  <div class="container-fluid" style="padding: 60px;">
+    <h2 class="show-on-scroll inline-photo" style="text-align: center;">Diseases & their Preventions!</h2>
+    <i class="down-arrow fas fa-angle-down show-on-scroll inline-photo" style="text-align: center; display: block;"></i>
+    <h3 class="show-on-scroll inline-photo" style="text-align: center;">Communicable Diseases (INFECTIOUS DISEASES)</h3>
+    <div class="container disease-describe">
+      <div class="row">
+        <div class="col-lg-3">
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup1" style="color: white;"> Chicken pox</a>
+          </p>
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup2" style="color: white;"> Measles</a>
+          </p>
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup9" style="color: white;"> Cholera</a>
+          </p>
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup13" style="color: white;"> Filariasis</a>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup3" style="color: white;"> Poliomyelitis</a>
+          </p>
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup4" style="color: white;"> Rabies</a>
+          </p>
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup10" style="color: white;"> Diphtheria</a>
+          </p>
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup14" style="color: white;"> Scabies</a>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup5" style="color: white;"> Hepatitis</a>
+          </p>
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup6" style="color: white;"> Influenza</a>
+          </p>
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup11" style="color: white;"> Leprosy</a>
+          </p>
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup15" style="color: white;"> Mumps</a>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup7" style="color: white;"> Tuberculosis</a>
+          </p>
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup8" style="color: white;"> Typhoid</a>
+          </p>
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup12" style="color: white;"> Moebiasis</a>
+          </p>
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup16" style="color: white;"> Pediculosis</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <h3 class="show-on-scroll inline-photo" style="text-align: center;">Non-Communicable Diseases</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup17" style="color: white;"> Diabetes mellitus</a>
+          </p>
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup21" style="color: white;"> Cancer</a>
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup18" style="color: white;"> Hypertension </a>
+          </p>
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup22" style="color: white;"> Allergy </a>
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup20" style="color: white;"> Osteoporosis</a>
+          </p>
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup19" style="color: white;"> Coronary heart disease</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <h3 class="show-on-scroll inline-photo" style="text-align: center;">Sexually Transmitted Diseases</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup23" style="color: white;"> AIDS</a>
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup24" style="color: white;"> Syphilis </a>
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;">
+            <a class="popup-trigger" data-target="#popup25" style="color: white;"> Gonorrhoea</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup_flight_travlDil2" class="overlay_flight_traveldil">
+    <div class="popup_flight_travlDil">
+
+    </div>
+  </div>
+
+  <div id="popup1" class="popup">
+    <div class="popup-text">
+      <h2>Chicken pox</h2>
+      <div>
+        <h3>Causes:</h3>
+        <p>Pathogen : Chicken pox virus (voricella)</p>
+        <p>Mode of transmission : By contact or through scabs</p>
+        <p>Incubation period : 12-20 days</p>
+        <h3>Symptoms</h3>
+        <ol>
+          <li>Fever, headache and loss of appetite</li>
+          <li>Dark red-coloured rash on the back and chest which spreads on the whole body.
+            Later, rashes change into vesicles.</li>
+          <li>After few days these vesicles start drying up and scabs (crusts) are formed.</li>
+          <li> These scabs start falling (infective stage)</li>
+        </ol>
+        <h3>Prevention and cure</h3>
+        <p>There is no vaccine against chicken pox as yet. But precautions must be taken as
+          follows:</p>
+        <ol>
+          <li> The patient should be kept in isolation.</li>
+          <li>Clothings and utensils, used by the patient should be sterilised.</li>
+          <li>Fallen scabs should be collected and burnt.</li>
+        </ol>
+        <p>One attack of chicken pox gives life long immunity to the person recovered from
+          this disease.</p>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+
+  <div id="popup2" class="popup">
+    <div class="popup-text">
+      <h2>Measles</h2>
+      <div>
+        <h3>Causes:</h3>
+        <p>Pathogen : Virus (Rubeola)</p>
+        <p>Mode of transmission : By air</p>
+        <p>Incubation period : 3-5 days</p>
+        <h3>Symptoms</h3>
+        <ol>
+          <li>Common cold</li>
+          <li>Appearance of small white patches in mouth and throat.</li>
+          <li>Appearance of rashes on the body.</li>
+        </ol>
+        <h3>Prevention and cure</h3>
+        <ol>
+          <li>The patient should be kept in isolation.</li>
+          <li>Cleanliness should be maintained.</li>
+          <li>Antibiotics check only the secondary infections which can easily recur.</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+  <div id="popup3" class="popup">
+    <div class="popup-text">
+      <h2>Poliomyelitis</h2>
+      <div>
+        <h3>Causes:</h3>
+        <p>Pathogen : Polio Virus</p>
+        <p>Mode of transmissions : Virus enters inside the body through food or water</p>
+        <p>Incubation period : 7-14 days</p>
+        <h3>Symptoms</h3>
+        <ol>
+          <li>The virus multiplies in intestinal cells and then reaches the brain through blood.</li>
+          <li>It damages brain and nerves and causes infantile paralysis.</li>
+          <li>Stiffness of neck, fever, loss of head support.</li>
+        </ol>
+        <h3>Prevention</h3>
+        <p>Polio vaccine drop (oral polio vaccine, OPV) are given to children at certain
+          intervals.</p>
+        <p>Pulse polio programme is organised in our country to give polio vaccine to
+          children.</p>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+
+  <div id="popup4" class="popup">
+    <div class="popup-text">
+      <h2>Rabies (also called hydrophobia)</h2>
+      <div>
+        <h3>Causes:</h3>
+        <p>Pathogen : Rabies virus</p>
+        <p>Mode of Transmission : Bite by a rabid dog.</p>
+        <p>Incubation period : 10 days to 1-3 months depending upon the distance of bite
+          from Central Nervous System (CNS), that is the brain or spinal cord.</p>
+        <h3>Symptoms</h3>
+        <ol>
+          <li>Severe headache and high fever.</li>
+          <li>Painful contraction of muscles of throat and chest.</li>
+          <li>Choking and fear of water leading to death.</li>
+        </ol>
+        <h3>Prevention</h3>
+        <ol>
+          <li>Compulsory immunisation of dogs.</li>
+          <li>Killing of rabid animals.</li>
+          <li>Anti-rabies injections or oral doses are given to the person bitten by a rabid
+            animal.</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+
+  <div id="popup5" class="popup">
+    <div class="popup-text">
+      <h2>Hepatitis</h2>
+      <div>
+        <h3>Causes:</h3>
+        <p>Pathogen : Hepatitis B virus.</p>
+        <p>Mode of Transmission : Mainly through contaminated water.</p>
+        <p>Incubation Period : Generally 15-160 days.</p>
+        <h3>Symptoms</h3>
+        <ol>
+          <li>Bodyache.</li>
+          <li>Loss of appetite and nausea.</li>
+          <li>Eyes and skin become yellowish, urine deep yellow in colour (due to bile
+            pigments).</li>
+          <li>Enlarged liver.</li>
+        </ol>
+        <h3>Prevention</h3>
+        <ol>
+          <li>Hepatitis B vaccine is now available in India.</li>
+          <li>Proper hygeine is to be observed.</li>
+          <li>Avoid taking fat rich substances.</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+
+  <div id="popup6" class="popup">
+    <div class="popup-text">
+      <h2>Influenza</h2>
+      <div>
+        <h3>Causes:</h3>
+        <p>Influenza is caused by a virus which attacks our body’s cells, resulting in various
+          effects depending on the strain of the virus.</p>
+        <h3>Symptoms</h3>
+        <ol>
+          <li>fever (Usually 100° F to 103° F in adults and often even higher in children).</li>
+          <li>respiratory tract infection symptoms such as, cough, sore throat, running
+            nose, headache, pain in the muscles, and extreme fatigue.</li>
+        </ol>
+        <h3>Prevention</h3>
+        <ol>
+          <li>Much of the illness and death caused by influenza can be prevented by annual
+            influenza vaccination. Influenza vaccine is specifically recommended for those
+            who are at high risk for complications with chronic diseases of the heart, lungs
+            or kidneys, diabetes, or severe forms of anaemia.</li>
+          <li>The persons suffering from influenza should
+            <ol>
+              <li>
+                drink plenty of fluids
+              </li>
+              <li>take symptom relief with paracetamol, aspirin (not in children under the
+                age of 16) or ibuprofen as recommended by the doctor.</li>
+              <li>Consult doctor immediately for treatment.</li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+
+  <div id="popup7" class="popup">
+    <div class="popup-text">
+      <h2>Tuberculosis</h2>
+      <div>
+        <h3>Causes:</h3>
+        <p>Pathogen : A bacterium (Mycobacterium tuberculosis).</p>
+        <p>Mode of Transmission : airborne-discharged through sputum, cough and sneeze,
+          of the infected person.</p>
+        <p>Incubation period : 2-10 weeks during which the bacteria produce a toxin,
+          tuberculin.</p>
+        <h3>Symptoms</h3>
+        <ol>
+          <li>Persistent fever and coughing.</li>
+          <li>Chest pain and blood comes out with the sputum.</li>
+          <li>General weakness.</li>
+        </ol>
+        <h3>Prevention</h3>
+        <ol>
+          <li>Isolation of patient to avoid spread of infection.</li>
+          <li>BCG vaccination is given to children as a preventive measure.</li>
+          <li>Living rooms should be airy, neat and with clean sorroundings.</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+
+  <div id="popup8" class="popup">
+    <div class="popup-text">
+      <h2>Typhoid</h2>
+      <div>
+        <h3>Causes:</h3>
+        <p>Pathogen : A Bacillus rod-shaped bacterium (Salmonella typhi)</p>
+        <p>Mode of transmission : Through contaminated food and water</p>
+        <p>Incubation period : About 1-3 weeks</p>
+        <h3>Symptoms</h3>
+        <ol>
+          <li>Continuous fever, headache, slow pulse rate.</li>
+          <li>Reddish rashes appear on the belly.</li>
+          <li>In extreme cases, ulcers may rupture resulting in death of the patient.</li>
+        </ol>
+        <h3>Prevention</h3>
+        <ol>
+          <li>Avoid taking exposed food and drinks.</li>
+          <li>Proper sanitation and cleanliness should be maintained.</li>
+          <li>Proper disposal of excreta of the patient.</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+  <div id="popup9" class="popup">
+    <div class="popup-text">
+      <h2>Cholera</h2>
+      <div>
+        <h3>Causes:</h3>
+        <p>Pathogen : Comma shaped bacterium (Vibrio cholerae)</p>
+        <p>Mode of transmission : Contaminated food and water. Housefly is the carrier.</p>
+        <p>Incubation period : 6 hours to 2-3 days.</p>
+        <h3>Symptoms:</h3>
+        <ol>
+          <li>Acute diarrohoea and watery stool.</li>
+          <li>Muscular cramps.</li>
+          <li>Loss of minerals through urine.</li>
+          <li>Dehydration leads to death.</li>
+        </ol>
+        <h3>Preventions</h3>
+        <ol>
+          <li>Cholera vaccination should be given.</li>
+          <li>Electrolytes (Na, K, sugar) dissolved in water should be given to the patient
+            to check dehydration (In market it is available as ORS–oral rehydration
+            solution).</li>
+          <li>Proper washing and cooking of food.</li>
+          <li>Proper disposal of vomit and human excreta</li>
+          <li>Flies should not be allowed to sit on eatables and utensils.</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+
+  <div id="popup10" class="popup">
+    <div class="popup-text">
+      <h2>Diphtheria</h2>
+      <p>This disease generally occurs in children of 1-5 years of age.</p>
+      <div>
+        <h3>Causes:</h3>
+        <p>Pathogen : Rod-shaped bacterium (Cornybacterium diphthereae)</p>
+        <p>Mode of Transmission : Through air (droplet infection)</p>
+        <p>Incubation period : 2-4 days</p>
+        <h3>Symptoms:</h3>
+        <ol>
+          <li>Slight fever, Sore throat and general indisposition.</li>
+          <li>Oozing semisolid material in the throat which develops into a tough membrane.
+            The membrane may cause clogging (blocking) of air passage, resulting into
+            death.</li>
+        </ol>
+        <h3>Preventions</h3>
+        <ol>
+          <li>Immediate medical attention should be given.</li>
+          <li>Babies should be given DPT vaccine.</li>
+          <li>Sputum, oral and nasal discharges of the infected child should be disposed off.</li>
+          <li>Isolation of the infected child.</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+
+  <div id="popup11" class="popup">
+    <div class="popup-text">
+      <h2>Leprosy</h2>
+      <div>
+        <h3>Causes:</h3>
+        <p>Pathogen : A bacterium (Mycobacterium leprae)</p>
+        <p>Mode of transmission : Prolonged contact with the infected person. Nasal
+          secretions are the most likely infectious material for family contacts.</p>
+        <p>Incubation period : 1-5 years</p>
+        <h3>Symptoms:</h3>
+        <ol>
+          <li>Affects skin.</li>
+          <li>Formation of nodules and ulcer.</li>
+          <li>Scabs and deformities of fingers and toes.</li>
+          <li>Infected areas lose sensation</li>
+        </ol>
+        <h3>Preventions</h3>
+        <ol>
+          <li>The children should be kept away from parents suffering from leprosy</li>
+          <li>Some medicine may arrest the disease and prevent from spreading</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+
+  <div id="popup12" class="popup">
+    <div class="popup-text">
+      <h2>Amoebiasis (Amoebic dysentery)</h2>
+      <div>
+        <h3>Causes:</h3>
+        <p>Pathogen : Entamoeba histolytica</p>
+        <p>Mode of transmission : Contaminated food and water</p>
+        <h3>Symptoms:</h3>
+        <ol>
+          <li>Formation of ulcers in intestine.</li>
+          <li>Feeling of abdominal pain and nausea.</li>
+          <li>Acute diarrhoea and mucus in stool.</li>
+        </ol>
+        <h3>Preventions</h3>
+        <ol>
+          <li>Proper sanitation should be maintained.</li>
+          <li>Vegetables and fruits must be properly washed before eating.</li>
+          <li>Antibiotics may be given to the patients.</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+
+  <div id="popup13" class="popup">
+    <div class="popup-text">
+      <h2>Filariasis</h2>
+      <div>
+        <h3>Causes:</h3>
+        <p>Pathogen : Filarial worm (Wucheraria bancrofti)</p>
+        <p>Mode of transmission : Bites of mosquitoes - Aedes and Culex.</p>
+        <h3>Symptoms:</h3>
+        <ol>
+          <li>Fever</li>
+          <li>Collection of endothellial cells and metabolites in the wall of lymph vessels.</li>
+          <li>Swelling takes place in certain parts of the body like legs, breasts, and scrotum.</li>
+          <li>Swelling of legs which appear as legs of elephant, so this disease is also called
+            elephantiasis </li>
+        </ol>
+        <h3>Preventions</h3>
+        <ol>
+          <li>Mesh doors and windows in the house to check the entry of mosquitoes.</li>
+          <li>The water collected in tanks or other articles should be properly covered.</li>
+          <li>Sprinkling of kerosene in ditches.</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+  <div id="popup14" class="popup">
+    <div class="popup-text">
+      <h2>SCABIES</h2>
+      <div>
+        <h3>Causes:</h3>
+        <p>Mode of transmission: Contact (skin-to-skin contact with
+          infected persons).</p>
+        <h3>Symptoms</h3>
+        <p>Appears as small, scattered, red spots which are most
+          frequently found in the web of the fingers and areas of the
+          thighs and arms where the skin is thin. Itching is most severe at
+          night.</p>
+        <h3>Preventions</h3>
+        <ol>
+          <li>Good personal hygiene. </li>
+          <li>Launder bedding and clothing (hot water and hot drying
+            cycle) worn next to skin at least 4 days before start of treatment. </li>
+          <li>Items that cannot be laundered should be kept in plastic bags for at least 4 days. </li>
+          <li>Notify families to check for symptoms in household contacts. </li>
+          <li>Prophylactic treatment of those who have had skin-to-skin contact with infected persons</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+  <div id="popup15" class="popup">
+    <div class="popup-text">
+      <h2>Mumps</h2>
+      <div>
+        <h3>Causes:</h3>
+        <p>Mode of transmission: Droplet transmission.</p>
+        <p>Incubation period: Usually from 16 to 18 days, but cases may
+          occur from 12 to 25 days after exposure.</p>
+        <h3>Symptom</h3>
+        <p>Begins with a slight fever and nausea. Then painful swelling
+          appears about the angle of the jaw and in front of the ear.</p>
+        <h3>Prevention</h3>
+        <ol>
+          <li>Immunization is available.</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+  <div id="popup16" class="popup">
+    <div class="popup-text">
+      <h2>Pediculosis</h2>
+      <div>
+        <h3>Causes:</h3>
+        <p>Mode of transmission: Direct and indirect (fomites)
+          contact.</p>
+        <h3>Symptoms</h3>
+        <ol>
+          <li>Irritation and itching of the scalp (many children are
+            asymptomatic). </li>
+          <li>Lice are light grey insects which lay eggs
+            (“nits”) on the hair, especially at the nape and about the ears.</li>
+        </ol>
+        <h3>Preventions</h3>
+        <ol>
+          <li>Examine and treat all infested children in class. </li>
+          <li>Retreat if indicated in 8-10 days to kill newly hatched lice. .</li>
+          <li>Store hats and coats separately and eliminate sharing of combs and brushes. School fumigation is
+            unnecessary. </li>
+          <li>Notify families to check for symptoms in household contacts.</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+  <div id="popup17" class="popup">
+    <div class="popup-text">
+      <h2>Diabetes mellitus</h2>
+      <div>
+        <h3>Causes:</h3>
+        <ol>
+          <li>Less secretion of insulin hormone from the pancreas.</li>
+          <li>Mental stress</li>
+          <li>Through heredity from parents to children.</li>
+        </ol>
+        <h3>Symptoms</h3>
+        <ol>
+          <li>More glucose in blood.</li>
+          <li>Excessive and frequent passing of urine.</li>
+          <li>Feeling thirsty and hungry frequently</li>
+          <li>Reduced healing capacity of injury.</li>
+          <li>General weakness of the body</li>
+        </ol>
+        <h3>Preventions</h3>
+        <ol>
+          <li>Control the excessive weight of the body.</li>
+          <li>A regulated and controlled diet is to be taken</li>
+          <li>The food should not contain sugar and much carbohydrates.</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+  <div id="popup18" class="popup">
+    <div class="popup-text">
+      <h2>Hypertension (high blood pressure)</h2>
+      <div>
+        <h3>Causes:</h3>
+        <ol>
+          <li>Due to reduced blood supply, and reduced oxygen available to the muscles, Health
+            heart’s efficiency is affected.</li>
+          <li>Due to stress and strain.</li>
+          <li>Obesity (over weight).</li>
+        </ol>
+        <h3>Symptoms</h3>
+        <ol>
+          <li>Persistent high blood pressure (BP)</li>
+          <li>It may damage the arteries of kidney</li>
+          <li>In extreme cases the arteries may burst or blindness may be caused.</li>
+          <li>It may also cause paralysis.</li>
+        </ol>
+        <h3>Preventions</h3>
+        <ol>
+          <li>Do not build up mental tension.</li>
+          <li>Low fat diet should be taken.</li>
+          <li>Weight of the body must be kept under control.</li>
+          <li>Good eating habits should be cultivated</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+  <div id="popup19" class="popup">
+    <div class="popup-text">
+      <h2>Coronary heart disease</h2>
+      <div>
+        <h3>Causes:</h3>
+        <ol>
+          <li>Due to reduced blood supply, and reduced oxygen available to the muscles, Health
+            heart’s efficiency is affected.</li>
+          <li>Due to stress and strain.</li>
+          <li>Obesity (over weight).</li>
+        </ol>
+        <h3>Symptoms</h3>
+        <ol>
+          <li>Severe pain in the chest gasping for breathe.</li>
+          <li>Intense nausea and vomiting.</li>
+          <li>Lot of sweating takes place.</li>
+          <li>Blood clot may be formed within the blood vessels.</li>
+        </ol>
+        <h3>Preventions</h3>
+        <ol>
+          <li>A diet low in saturated fats may control the formation of cholesterol.</li>
+          <li>Sound eating habits should be developed.</li>
+          <li>Over weight should be checked.</li>
+          <li>Avoid smoking, alcoholic drinks and drugs.</li>
+          <li>Take treatment under a qualified doctor.</li>
+          <li>Electrocardiogram (ECG) can diagnose the disease.</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+  <div id="popup20" class="popup">
+    <div class="popup-text">
+      <h2>Osteoporosis</h2>
+      <div>
+        <p>Osteoporosis is an age dependent disorder with loss of the normal density of bone.
+          The bones become fragile and are easily fractured. Bones that are affected by
+          osteoporosis can fracture with only a minor fall or injury. Elderly men and women
+          are most susceptible because of hormonal changes which occur with advancing age.</p>
+        <h3>Symptoms</h3>
+        <ol>
+          <li>The symptoms of osteoporosis are related to the location of the fracture.</li>
+          <li>Fractures of the spine can cause severe ‘band like’ pain that radiates around
+            from the back to the side of the body.</li>
+          <li>Some patients with osteoporosis develop stress fractures of the feet while
+            walking or stepping off.</li>
+        </ol>
+        <h3>Preventions</h3>
+        <ol>
+          <li>Changes to lifestyle and diet are recommended.</li>
+          <li>Exercise also helps to protect persons from the risk of getting osteoporosis.Exercises for osteoporosis
+            under the guidance
+            of a professional physiotherapist.</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+  <div id="popup21" class="popup">
+    <div class="popup-text">
+      <h2>Cancer</h2>
+      <div>
+        <h3>Causes:</h3>
+        <ol>
+          <li>No definite cause has been arrived at so far. However, it is found that body
+            has proto-oncogenes. These are activated by some substances or stimulus,
+            which convert these into active cancer-causing oncogenes.</li>
+          <li>Heavy smoking and alcoholism.</li>
+          <li>Chewing of tobacco.</li>
+          <li>Consistent irritation of skin or repeated injury at the same point.</li>
+        </ol>
+        <h3>Symptoms</h3>
+        <ol>
+          <li>Persistent lump or thickening in tissues, specially in tongue, breast and uterus.</li>
+          <li>Any irregular bleeding or blood-tinged discharge from any body opening.</li>
+          <li>Any sore that does not heal quickly.</li>
+          <li>Change in the form of mole or wart.</li>
+          <li>Persistent hoarseness in voice, cough or difficulty in swallowing.</li>
+        </ol>
+        <h3>Preventions</h3>
+        <ol>
+          <li>Cancer check up should be done once a year.</li>
+          <li>Treatment should be taken under medical advice.</li>
+          <li>Avoid smoking, taking alcohol and chewing of tobacco.</li>
+          <li>Observe regularity in life style to keep body healthy.</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+
+  <div id="popup22" class="popup">
+    <div class="popup-text">
+      <h2>Allergy</h2>
+      <ol>
+        <li>Includes a group of non-infectious diseases.</li>
+        <li>No definite cause is known</li>
+        <li>It is believed that they occur due to hypersensitiviness of certain individuals
+          to foreign matter (allergens) which may enter inside the body.</li>
+        <li>Symptoms may be sneezing, gasping, running of eyes, irritation of throat or
+          trachea.</li>
+        <li>Allergens may be pollen grains, feathers, some animals or insects, drugs,
+          medicines and odour.</li>
+      </ol>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+
+  <div id="popup23" class="popup">
+    <div class="popup-text">
+      <h2>AIDS (Acquired Immuno Deficiency Syndrome)</h2>
+      <div>
+        <h3>Causes:</h3>
+        <ol>
+          <li> Sexual contact with the affected person. In India, the most common route of
+            HIV transmission is through unprotected heterosexual sex.</li>
+          <li>Using the same syringe that was used for affected person.</li>
+          <li>Blood transfusion which contains human immuno deficiency virus.</li>
+          <li>Organ transplantation of the affected person.</li>
+          <li>From mother to new born baby during the process of giving birth.</li>
+        </ol>
+        <h3>Symptoms</h3>
+        <ol>
+          <li>A type of lung disease develops (tuberculosis).</li>
+          <li>A skin cancer may be observed.</li>
+          <li>Nerves are affected.</li>
+          <li>Brain is badly damaged with the loss of memory, ability to speak and to think.</li>
+        </ol>
+        <h3>Preventions</h3>
+        <ol>
+          <li>There should not be any sexual contact with the person who has HIV infection
+            or STI. Since STI causes some damage to the genital area and mucous layer,
+            and thus facilitates the entry of HIV into the body.</li>
+          <li>Use disposable syringe and needle</li>
+          <li>The blood to be transfused to the needy person, should be free from HIV germ.</li>
+          <li>Condom should always be used during intercourse.</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+
+  <div id="popup24" class="popup">
+    <div class="popup-text">
+      <h2>Syphilis</h2>
+      <div>
+        <h3>Causes:</h3>
+        <p>Mode of spread
+          Sexual contact with the infected person</p>
+        <p>Incubation period
+          Symptoms of the disease occur in about 10-90 days after contraction, but generally
+          noticed in 3-4 weeks after getting infected with the bacteria.</p>
+        <h3>Symptoms</h3>
+        <ol>
+          <li>Fever, and sores on the skin, in the throat and urinogenital areas especially
+            vagina or penis, anus, rectum and mouth. Sores are firm, round and often
+            painless.</li>
+          <li>Rashes on hands, feet and palms.</li>
+          <li>White patches in the mouth.</li>
+          <li>Acne-like warts in the groin area.</li>
+          <li>Hair fall in patches from infected areas.</li>
+        </ol>
+        <h3>Preventions</h3>
+        <ol>
+          <li>Having sexual intimacy with only one person</li>
+          <li>Avoiding prostitution and homosexuality.</li>
+          <li>Practising abstinence, and use condoms.</li>
+          <li>Taking appropriate medical treatment, and maintaing personal hygience.</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+
+  <div id="popup25" class="popup">
+    <div class="popup-text">
+      <h2>Gonorrhoea</h2>
+      <div>
+        <h3>Causes:</h3>
+        <p>Modes of spread
+          Having multiple sex partners increases the risk of contracting it. Any kind of
+          unprotected sex is always a risk. Any kind of contact of sores with an infected person
+          is also risky.</p>
+        <p>Incubation period
+          About 2-5 days after getting infection.</p>
+        <h3>Symptoms</h3>
+        <ol>
+          <li>Inflammation of mucous membrane in the urinogenital tract.</li>
+          <li>Burning sensation while passing out urine and urethral discharge.</li>
+          <li>Rectal discomfort.</li>
+          <li>Pain in the joints.</li>
+          <li>Rashes on palms, Mild sore throat</li>
+        </ol>
+        <h3>Preventions</h3>
+        <ol>
+          <li>Having sexual contact with only one person.</li>
+          <li>Avoiding prostitution and homosexuality.</li>
+          <li>Taking antibiotics, such as penicillin injection or appropriate medicines at the
+            appropriate time as per Doctor’s advice.</li>
+        </ol>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+  <div id="popup26" class="popup">
+    <div class="popup-text">
+      <h2>Dengue</h2>
+      <div class="scrollable-div-dengue">
+        <p>Dengue is an acute fever caused by virus. It is of two types: (i) Dengue fever, (ii)
+          Dengue hemorrhagic fever.</p>
+        <p>Dengue fever is characterized by an onset of sudden high fever, severe headache,
+          pain behind the eyes and in the muscles and joints.</p>
+        <p>Dengue hemorrhagic fever is an acute infectious viral disease. It is an advanced
+          stage of dengue fever. It is characterized by fever during the initial phase and other
+          symptoms like headache, pain in the eye, joint pain and muscle pain, followed by
+          signs of bleeding, red tiny spots on the skin, and bleeding from nose and gums.</p>
+        <h5>How does Dengue spread?</h5>
+        <p>Dengue spreads through the bite of an infected Aedes aegypti mosquito. The
+          transmission of the disease occurs when a mosquito bites an infected person and
+          subsequently bites a healthy person. In doing so, it transmits blood containing the virus to the healthy
+          person and the person becomes infected with dengue. The first
+          symptoms of the disease occur about 5 to 7 days after the infected bite.</p>
+        <p>Aedes mosquito rests indoors, in closets and other dark places, and is active during
+          day time. Outside, it rests where it is cool and shaded. The female mosquito lays
+          her eggs in stagnant water containers such as coolers, tyres, empty buckets, in and
+          around homes, and other areas in towns or villages. These eggs become adults in
+          about 10 days.</p>
+        <h5>Incubation period</h5>
+        <p>The time between the bite of a mosquito carrying dengue virus and the start of
+          symptoms averages 4 to 6 days, with a range of 3 to 14 days.</p>
+        <h5>Diagnosis</h5>
+        <p>Diagnosis is made through blood tests by scanning for antibodies against dengue
+          viruses. In addition the blood platelet counts also get drastically reduced in the
+          infected person.</p>
+        <h5>Symptoms</h5>
+        <p>Symptoms of Dengue fever</p>
+        <ol>
+          <li>Sudden onset of high fever, generally 104-105 °F (40 °C), which may last 4-
+            5 days.</li>
+          <li>Severe headache mostly in the forehead.</li>
+          <li>pain in the joints and muscles, body aches.</li>
+          <li>Pain behind the eyes which worsens with eye movement.</li>
+          <li>Nausea or vomiting</li>
+        </ol>
+        <h5>Symptoms of Dengue hemorrhagic fever</h5>
+        <p>These include symptoms similar to dengue fever, plus other symptoms such as:</p>
+        <ol>
+          <li>Severe and continuous pain in the abdomen.</li>
+          <li>Rashes on the skin.</li>
+          <li>Bleeding from the nose, mouth, or in the internal organs.</li>
+          <li>Frequent vomiting with or without blood.</li>
+          <li>Black stools due to internal bleeding.</li>
+          <li>Excessive thirst (dry mouth).</li>
+          <li>Pale, cold skin, weakness.</li>
+        </ol>
+        <h5>Prevention</h5>
+        <p>Following steps can be taken to prevent spread of dengue fever:</p>
+        <ol>
+          <li>Avoid water stagnation for more than 72 hours so that the mosquitoes do not
+            breed there.</li>
+          <li>Prevent mosquito breeding in stored water bodies, like ponds, and wells.</li>
+          <li>Destroy discarded objects like old tyres and bottles, as they collect and store Health
+            rain water.</li>
+          <li>Use mosquito repellents and wear long sleeved clothes to curtail exposure.</li>
+          <li>Use mosquito nets, also during daytime.</li>
+          <li>Avoid outdoor activities during dawn or dusk when these mosquitoes are most
+            active.</li>
+          <li>Patients suffering from dengue fever must be isolated for at least 5 days.</li>
+          <li>Report to the nearest health centre for any suspected case of Dengue fever.</li>
+        </ol>
+        <h5>Treatment for dengue and dengue hemorrhagic fever</h5>
+        <p>There is no specific treatment for dengue fever. Persons with dengue fever should
+          rest and drink plenty of fluids. Dengue hemorrhagic fever is treated by replacing
+          lost fluids. Some patients need blood transfusions to control bleeding.</p>
+      </div>
+    </div>
+    <span class="popup-btn-close">&times;</span>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+    style="background-color: darkcyan; padding: 80px 0; margin: 40px 0; color: white;">
+    <h2 style="text-align: center; color: white;">RECENT TRENDING DISEASES</h2>
+    <i class="down-arrow fas fa-angle-down" style="color: white;text-align: center; display: block;"></i>
+    <ol class="carousel-indicators" style="bottom: 50px;">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- <img src="../static/img/home.png" alt=""> -->
+        <div class="container-fluid" style="padding: 0 50px;">
+          <div class="row">
+            <div class="col-lg-5">
+              <img src="../static/img/illu12.png" style="padding: 50px 0;width: 50vw; height: 90vh;"
+                class="d-block w-100" alt="...">
+            </div>
+            <div class="col-lg-7">
+              <div style="text-align: left; padding: 50px;">
+                <h3 class="carousel-header">HEAT STROKE</h3>
+                <p>Causes of HEAT STROKES:</p>
+                <ul style="list-style-type: disc;">
+                  <li>Prolonged exposure to high temperatures, especially in hot and humid environments, can lead to heat stroke.</li>
+                  <li> Inadequate fluid intake can impair the body's ability to regulate temperature and cool down through sweating, increasing the risk of heat stroke.</li>
+                  <li>Engaging in strenuous activities, particularly in hot weather conditions, can elevate body temperature rapidly, leading to heat stroke.</li>
+                </ul>
+                <h5>Important Ways to Slow the Spread</h5>
+                <ul style="list-style-type: disc;">
+                  <li>Drink plenty of fluids, especially water, to prevent dehydration and help regulate body temperature.</li>
+                  <li>Limit exposure to direct sunlight and seek shaded areas or air-conditioned spaces when possible.</li>
+                  <li>Choose lightweight, loose-fitting clothing and light-colored fabrics to reflect sunlight and heat.</li>
+                  <li> Minimize physical exertion, particularly during the hottest parts of the day, to reduce the risk of overheating.</li>
+                  <li> Keep an eye on children, elderly individuals, and those with pre-existing medical conditions, as they are more susceptible to heat-related illnesses.</li>
+                </ul>
+                <h5>Symptoms</h5>
+                <p>
+                  Heat stroke symptoms include a body temperature above 103°F/39.4°C, accompanied by hot, red, dry, or damp skin.
+                  Individuals may experience a rapid and strong pulse, along with symptoms such as headache, dizziness, confusion, or unconsciousness. 
+                  Other common signs include nausea, vomiting, or muscle cramps. It's essential to recognize these symptoms promptly and seek medical assistance. 
+                  Heat stroke is a serious condition that requires immediate attention to prevent complications such as organ damage, brain injury, or even death.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container-fluid" style="padding: 0 50px;">
+          <div class="row">
+            <div class="col-lg-5">
+              <img src="../static/img/malaria.png" style="padding: 50px 0;width: 100%; height: 100%;" alt="...">
+            </div>
+            <div class="col-lg-7">
+              <div style="text-align: left; padding: 50px;">
+                <h3 class="carousel-header">MALARIA</h3>
+                <p>Mode of transmission : By bite of female Anopheles mosquitoes</p>
+                <p>Incubation period : Approximately 12 days</p>
+                <h5>Symptoms</h5>
+                <ol>
+                  <li>Headache, nausea and muscular pain</li>
+                  <li>Feeling of chilliness and shivering followed by fever which becomes normal
+                    along with sweating after some time.</li>
+                  <li>The patient becomes weak and anaemic.</li>
+                  <li>If not treated properly secondary complications may lead to death.</li>
+                </ol>
+                <h5>Prevention </h5>
+                <ol>
+                  <li>Fitting of double door and windows (with “Jali” i.e. wire mesh) in the house
+                    to prevent entry of mosquitoes.</li>
+                  <li>Use of mosquito net and mosquito repellents.</li>
+                  <li>No water should be allowed to collect in ditches or other open spaces to
+                    prevent mosquito breeding.</li>
+                  <li>Sprinkling of kerosene oil in ditches or other open spaces where water gets
+                    collected.</li>
+                  <li>Destroy discarded objects like old tyres and bottles, as they collect and store Health
+                    rain water.</li>
+                  <li>Use mosquito repellents and wear long sleeved clothes to curtail exposure.</li>
+                  <li>Avoid outdoor activities during dawn or dusk when these mosquitoes are most
+                    active.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container-fluid" style="padding: 0 50px;">
+          <div class="row">
+            <div class="col-lg-5">
+              <img src="../static/img/dengue5.png" style="padding: 80px 0 50px 0;width: 100%; height: 100%;" alt="...">
+            </div>
+            <div class="col-lg-7">
+              <div style="text-align: left; padding: 50px;">
+                <h3 class="carousel-header">DENGUE</h3>
+                <h5>How does Dengue spread?</h5>
+                <p>Dengue spreads through the bite of an infected Aedes aegypti mosquito.</p>
+                <h5>Symptoms</h5>
+                <ol>
+                  <li>Sudden onset of high fever.</li>
+                  <li>Severe headache mostly in the forehead.</li>
+                  <li>pain in the joints and muscles, body aches.</li>
+                  <li>Pain behind the eyes which worsens with eye movement.</li>
+                </ol>
+                <h5>Prevention</h5>
+                <ol>
+                  <li>Avoid water stagnation for more than 72 hours so that the mosquitoes do not
+                    breed there.</li>
+                  <li>Prevent mosquito breeding in stored water bodies, like ponds, and wells.</li>
+                  <li>Destroy discarded objects like old tyres and bottles, as they collect and store Health
+                    rain water.</li>
+                  <li>Use mosquito repellents and wear long sleeved clothes to curtail exposure.</li>
+                  <li>Use mosquito nets, also during daytime.</li>
+                  <li>Avoid outdoor activities during dawn or dusk when these mosquitoes are most
+                    active.</li>
+                  <li>Patients suffering from dengue fever must be isolated for at least 5 days.</li>
+                </ol>
+                <p>To read about dengue in detail - <a class="popup-trigger" data-target="#popup26"
+                    style="color: white; background: none; font-size: inherit; display: contents; font-weight: 300;">
+                    CLICK HERE</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <div class="container-fluid site-char" style="padding: 50px;">
+    <h2 style="text-align: center;">YOGA SECTION</h2>
+    <i class="down-arrow fas fa-angle-down show-on-scroll inline-photo" style="text-align: center; display: block;"></i>
+    <div class="row" style="text-align: center;">
+      <div class="col-lg-3 col-md-4 col-sm-12 show-on-scroll inline-photo"
+        style="box-shadow: 2px 2px 5px #c0bebe; padding: 20px; margin: 50px">
+        <div class="container">
+          <img class="char-img" src="../static/img/obesity.jpeg" alt="">
+          <h3>OBESITY</h3>
+          <p>Yoga asanas that can help in prevention of obesity are Vajrasana, Hastasana, Trikonasana, Ardha
+            Matsyendrasana, etc.</p>
+          <a class="btn" href="{{url_for('obesity')}}" style="background-color: #ff4449; color: white;">Know more <i
+              class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-12 show-on-scroll inline-photo"
+        style="box-shadow: 2px 2px 5px #c0bebe; padding: 20px; margin: 50px">
+        <div class="container">
+          <img class="char-img" src="../static/img/diabetes.jpeg" alt="">
+          <h3>DIABETES</h3>
+          <p>Yoga asanas that can help in prevention of diabetes are bhujangasana, Paschimottanasana, Pavanmuktasana,
+            Ardha Matsyendrasana, etc.</p>
+          <a class="btn" href="{{url_for('diabetes')}}" style="background-color: #ff4449; color: white;">Know more <i
+              class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-12 show-on-scroll inline-photo"
+        style="box-shadow: 2px 2px 5px #c0bebe; padding: 20px; margin: 50px">
+        <div class="container">
+          <img class="char-img" src="../static/img/asthma.jpeg" alt="">
+          <h3>ASTHMA</h3>
+          <p>Yoga asanas that can help in prevention of asthma are Sukhasana, Chakrasana, Gomukhasana, Parvatasana,
+            Bhujangasana, Matsyasana, etc.</p>
+          <a class="btn" href="{{url_for('asthma')}}" style="background-color: #ff4449; color: white;">Know more <i
+              class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-12 show-on-scroll inline-photo ml-auto"
+        style="box-shadow: 2px 2px 5px #c0bebe; padding: 20px; margin: 50px; ">
+        <div class="container">
+          <img class="char-img" src="../static/img/hypertension.jpeg" alt="">
+          <h3>HYPERTENSION</h3>
+          <p>Yoga asanas that can help in prevention of Hypertension are tadasana, vajrasana, Pavanmuktasana, Ardha
+            Chakrasana, Bhujangasana, Shavasana, etc.</p>
+          <a class="btn" href="{{url_for('hypertension')}}" style="background-color: #ff4449; color: white;">Know more
+            <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-12 show-on-scroll inline-photo mr-auto"
+        style="box-shadow: 2px 2px 5px #c0bebe; padding: 20px; margin: 50px">
+        <div class="container">
+          <img class="char-img" src="../static/img/backpain.jpeg" alt="">
+          <h3>BACKPAIN</h3>
+          <p>Yoga asanas that can help in prevention of backpain are Tadasana, Ardha Matsyendrasana, Vakrasana,
+            Bhujangasana, Shalabhasana, etc.</p>
+          <a class="btn" href="{{url_for('backpain')}}" style="background-color: #ff4449; color: white;">Know more <i
+              class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" style="background: #f7f7f7; padding: 80px 0;">
+    <h2 style="text-align: center;">Healthy Habits</h2>
+    <i class="down-arrow fas fa-angle-down show-on-scroll inline-photo" style="text-align: center; display: block;"></i>
+    <h3 style="text-align: center;">Protect Yourself With Healthy Habits</h3>
+    <p style="text-align: center;">Healthy habits prevent germs and infectious diseases from spreading. Learn, practice,
+      and teach healthy habits. </p>
+    <div class="container col-lg-6 col-md-10 col-sm-12" style="margin-top: 30px; margin-bottom: 60px;">
+
+      <button class="accordion">Handle & Prepare Food Safely</button>
+      <div class="panel">
+        <p>Food can carry germs. Wash hands, utensils, and surfaces often when preparing any food, especially raw meat.
+          Always wash fruits and vegetables. Cook and keep foods at proper temperatures. Don’t leave food out –
+          refrigerate promptly.</p>
+      </div>
+
+      <button class="accordion">Wash Hands Often</button>
+      <div class="panel">
+        <div class="wpb_wrapper">
+          <p>One of the most important healthy habits to prevent the spread of germs is to clean your hands.&nbsp; Our
+            hands can carry germs, so it is important to wash them often, even if they don’t look dirty.</p>
+          <h4>When to Wash Your Hands</h4>
+          <p><strong>Make sure to clean your hands before and after:</strong></p>
+          <ul style="color: black; list-style: disc;">
+            <li class="first">Using the bathroom or changing diapers</li>
+            <li>Eating</li>
+            <li>Cooking or serving food</li>
+            <li>Treating a cut or wound</li>
+            <li>Contact with a sick person</li>
+            <li class="last">Putting on and removing protective equipment like a face mask</li>
+          </ul>
+          <p><strong>Clean your hands after these actions:</strong></p>
+          <ul style="color: black; list-style: disc;">
+            <li class="first">Coughing, sneezing, or blowing your nose</li>
+            <li>Touching another person’s hands or touching an animal or pet</li>
+            <li class="last">Handling garbage</li>
+          </ul>
+          <p>Touching frequently touched areas (doorknobs) or contaminated items (dirty laundry or dishes).</p>
+          <h4>How to Wash Hands with Soap and Water</h4>
+          <ol>
+            <li class="first">Wet hands and apply soap.</li>
+            <li>Rub hands for at least 20 seconds. Scrub all surfaces.</li>
+            <li>Rinse hands.</li>
+            <li class="last">Dry hands with a clean cloth or paper towel. If in a public place, use the paper towel to
+              turn off the faucet. Then, throw in the trash.</li>
+          </ol>
+          <p>*When helping a child, wash their hands first, and then your own.</p>
+          <h4>How to Clean Hands with Hand Sanitizer</h4>
+          <ol>
+            <li class="first">Use hand sanitizer if soap and water are not available and if your hands do not look
+              dirty. To be effective, hand sanitizer must have at least 60% alcohol content.</li>
+            <li>Apply hand sanitizer to both hands.</li>
+            <li class="last">Rub hands covering all surfaces until dry. If your hands dry before 10 seconds you did not
+              use enough. Apply more and repeat.</li>
+          </ol>
+          <p>*Although not as effective as washing one’s hands with soap and water or using hand sanitizer,
+            pre-moistened cleansing towelettes with at least 60% alcohol content can be an alternative.</p>
+
+        </div>
+      </div>
+
+      <button class="accordion">Clean & Disinfect Commonly Used Surfaces</button>
+      <div class="panel">
+        <p>Germs can live on surfaces. Cleaning with soap and water is usually enough. However, you should disinfect
+          your bathroom and kitchen regularly. Disinfect other areas if someone in the house is ill. You can use an EPA
+          certified disinfectant (look for the EPA registration number on the label) or a bleach solution.</p>
+      </div>
+
+      <button class="accordion">Cough and Sneeze into a Tissue or Your Sleeve</button>
+      <div class="panel">
+        <p>If you are sick, the air that comes out of your mouth when you cough or sneeze may contain germs. Someone
+          close by can breathe in your air, or touch a surface contaminated with your germs, and become ill. Cough or
+          sneeze into a tissue or your shirt sleeve-not into your hands. Remember to throw away the tissue and wash your
+          hands. You can wear a face mask when you are sick with a cough or sneezing illness.</p>
+      </div>
+
+      <button class="accordion">Don’t Share Personal Items</button>
+      <div class="panel">
+        <p>Avoid sharing personal items that can’t be disinfected, like toothbrushes and razors, or sharing towels
+          between washes. Needles should never be shared, should only be used once, and then thrown away properly.</p>
+      </div>
+
+      <button class="accordion">Get Vaccinated</button>
+      <div class="panel">
+        <p>Vaccines can prevent many infectious diseases. You should get some vaccinations in childhood, some as an
+          adult, and some for special situations like pregnancy and travel. Make sure you and your family are up-to-date
+          on your vaccinations. If your regular doctor does not offer the vaccine you need, visit the Adult Immunization
+          and Travel Clinic.</p>
+      </div>
+
+      <button class="accordion">Avoid Touching Wild Animals</button>
+      <div class="panel">
+        <p>You and your pets should avoid touching wild animals which can carry germs that cause infectious diseases. If
+          you are bitten, talk to your doctor. Make sure that your pet’s vaccinations are up-to-date.</p>
+      </div>
+
+      <button class="accordion">Stay Home When Sick</button>
+      <div class="panel">
+        <p>When you are sick, stay home and rest. You will get well sooner, and will not spread germs.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container" style="padding: 100px 0;">
+    <h1 style="text-align: center;">VIDEO RESOURCES</h1>
+    <div class="row">
+      <div class="col-lg-4">
+        <iframe width="300" height="220" src="https://www.youtube.com/embed/xyQY8a-ng6g" style="margin: 20px;" allowfullscreen></iframe>
+        <iframe width="300" height="220" src="https://www.youtube.com/embed/a-084pqI05U" style="margin: 20px;" allowfullscreen></iframe>
+        <iframe width="300" height="220" src="https://www.youtube.com/embed/wWGulLAa0O0" style="margin: 20px;" allowfullscreen></iframe>
+      </div>
+      <div class="col-lg-4">
+        <iframe width="300" height="220" src="https://www.youtube.com/embed/7TrcgDRcrBw" style="margin: 20px;" allowfullscreen></iframe>
+        <iframe width="300" height="220" src="https://www.youtube.com/embed/hmFQqjMF_f0" style="margin: 20px;" allowfullscreen></iframe>
+        <iframe width="300" height="220" src="https://www.youtube.com/embed/zi7qIMXNhA0" style="margin: 20px;" allowfullscreen></iframe>
+      </div>
+      <div class="col-lg-4">
+        <iframe width="300" height="220" src="https://www.youtube.com/embed/1Je0mu4GG-o" style="margin: 20px;" allowfullscreen></iframe>
+        <iframe width="300" height="220" src="https://www.youtube.com/embed/hUXdY8mKGEA" style="margin: 20px;" allowfullscreen></iframe>
+        <iframe width="300" height="220" src="https://www.youtube.com/embed/Gmh_xMMJ2Pw" style="margin: 20px;" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div> -->
+</section>
+<!-- Libraries -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+  integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"
+  integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"
+  integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"></script>
+<script src="{{url_for('static', filename='js/disease_popup.js')}}"></script>
+<script src="{{url_for('static', filename='js/car.js')}}"></script>
+<script src="{{url_for('static', filename='js/faq.js')}}"></script>
+<script src="{{url_for('static', filename='js/guide.js')}}"></script>
+{% endblock %}

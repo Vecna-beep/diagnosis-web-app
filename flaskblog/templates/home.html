@@ -1,0 +1,236 @@
+{%extends "layout.html"%}
+
+{% block head %}
+<!-- Page title -->
+<title>MediSphere</title>
+<!-- Link to respective CSS stylesheet -->
+<link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+{% endblock %}
+
+{% block content %}
+<!-- <h1>HOME PAGE</h1> -->
+<div class="container-fluid grey-container">
+  <div class="row">
+    <div class="col-lg-6" style="padding: 0; ">
+      <img style="height: 100vh; width: 100vw; object-fit: cover;" src="../static/img/background.jpg" alt="">
+    </div>
+    <div class="col-lg-5" style="padding-top: 25vh; position: absolute; left: 50px;">
+      <h1 class="home-heading inner-div" style="color: white;">MediSphere</h1>
+      <p class="home-desc inner-div2">MediSphere diagnoses disease based on the symptomsthat the user enters. 
+        We diagnose the disease if the patient is not in danger and the user simply wants to know
+        what disease he or she might have. The dataset consisting of at least 100 symptoms, is used to train the model
+        to diagnose various diseases. The web application provide preventive information about common diseases. Get
+        latest health related news and have conversation with out medibot - Zen.</p>
+      <!-- {% if current_user.is_authenticated %}
+      {% else %}
+      <a class="change-btn inner-div3" href="{{url_for('login')}}">Get Started</a>
+      {% endif %} -->
+      <a class="change-btn inner-div3" href="{{url_for('checkup')}}">Checkup Now!</a>
+      <a class="change-btn inner-div3" href="{{url_for('guideline')}}">Help-Guide</a>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid site-char">
+  <div class="row" style="text-align: center;">
+    <div class="col-lg-4 col-md-4 col-sm-12 show-on-scroll inline-photo">
+      <div class="container">
+        <img class="char-img" src="../static/img/home3.png" alt="">
+        <h3>Diagnose Disease</h3>
+        <p>The disease is diagnosed using the algorithm(Decision Tree Classifier) and the user has to enter the symptoms
+          from the given drop-down menu. </p>
+        <a class="btn" href="{{url_for('checkup')}}" style="background-color: #ff4449; color: white;">Know more <i
+            class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 show-on-scroll inline-photo">
+      <div class="container">
+        <img class="char-img" src="../static/img/home3.png" alt="">
+        <h3>Health Manoeuvre</h3>
+        <p>User is provided with resources for preventing common diseases. Insighful information related to yoga asanas
+          are given for preventing diseases.</p>
+        <a class="btn" href="{{url_for('prevention')}}" style="background-color: #ff4449; color: white;">Know more <i
+            class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 show-on-scroll inline-photo">
+      <div class="container">
+        <img class="char-img" src="../static/img/home3.png" alt="">
+        <h3>Bulletin & MediBot</h3>
+        <p>The web application provides latest health related news from all over the world and provide location of
+          nearby health centers. Have conversation with our medibot.</p>
+        <a class="btn" href="{{url_for('healthcenter')}}" style="background-color: #ff4449; color: white;">Know more <i
+            class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" style="background-color: #f7f7f7; padding: 60px;">
+  <h1 class="show-on-scroll inline-photo" style="text-align: center;">Some of the Diseases diagnosed by us!</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Alzheimer's disease</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Pneumocystis pneumonia</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Accident cerebrovascular</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Arthritis</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Chronic kidney failure</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Coronary heart disease</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Deep vein thrombosis</p>
+      </div>
+      <div class="col-lg-3">
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Deglutition disorder</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Depressive disorder</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Failure heart congestive</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Kidney failure</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Hemorrhoids</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Hepatitis</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Hyperbilirubinemia</p>
+      </div>
+      <div class="col-lg-3">
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Incontinence</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Infection urinary tract</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> ketoacidosis diabetic</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Kidney disease</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Malignant neoplasm of breast</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Malignant tumor of colon</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Migraine disorders</p>
+      </div>
+      <div class="col-lg-3">
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Neoplasm metastasis</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Osteoporosis</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Pneumonia</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Psychotic disorder</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Septicemia</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Tonic-clonic epilepsy</p>
+        <p class="show-on-scroll inline-photo" style="margin-right: auto; margin-top: 30px;"><i
+            class="fas fa-check"></i> Tricuspid valve insufficiency</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container" style="padding: 120px 60px;">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="card show-on-scroll inline-photo">
+        <div class="card-body" style="height: 400px;">
+          <canvas id="doughnut-chart"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <h1 class="show-on-scroll inline-photo">Analysis</h1>
+      <p class="show-on-scroll inline-photo">The application of classification algorithms on disease datasets yields
+        promising results by developing adaptive, automated and intelligent diagnostic systems for diseases.
+        Classification systems can be used to expedite the process and to enhance the computational efficiency of
+        results. We have analyze accuracy of decision tree classification systems used in our system for disease
+        diagnose.</p>
+      <p class="show-on-scroll inline-photo"><i class="fas fa-check"></i> Decision tree classification model</p>
+      <p class="show-on-scroll inline-photo"><i class="fas fa-check"></i> 90% accuracy rate of ml model</p>
+      <p class="show-on-scroll inline-photo"><i class="fas fa-check"></i> Link to disease dataset - <a
+          href="https://impact.dbmi.columbia.edu/~friedma/Projects/DiseaseSymptomKB/index.html">Dataset</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="fluid-container newsletter" style="background-color: #62afb9; padding: 60px; text-align: left;">
+  <div class="row">
+      <div class="col-lg-3">
+          <img src="../static/img/letter1.png" alt="">
+      </div>
+      <div class="col-lg-9" style="padding: 50px 0 0 50px;">
+          <div>
+              <h3 style="font-weight: 500; color: white;">Subscribe to our newsletter and never miss an update!</h3>
+              <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nostrum rerum saepe ratione temporibus enim?</p>
+              <input type="text" placeholder="Enter your email address">
+              <button class="btn" style="padding: 10px; background-color: #ff4449; color: white;">Let's get started!</button>
+          </div>
+      </div>
+  </div>
+</div> -->
+
+<div class="bottom-container" style="background-color: #2a333b; padding: 80px 40px 40px 40px;text-align: center;">
+  <h1 class="underline show-on-scroll inline-photo" style="color: #62afb9; margin-bottom: 40px;">CONTACT US</h1>
+  <h3 class="show-on-scroll inline-photo" style="color: white;">Let's us know what is on your mind!</h3>
+  <div class="row" style="padding: 80px 0;text-align: left;">
+    <div class="col-lg-6">
+      <div>
+        <ul class="info">
+          <li class="show-on-scroll inline-photo">
+            <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+            <span class="contact-desc ">XYZ, main road New Plaza, Chhattisgarh 492001</span>
+          </li>
+          <li class="show-on-scroll inline-photo">
+            <span class="contact-icon"><i class="fas fa-at"></i></span>
+            <a style="color: white;" class="contact-desc " href="mailto:punerva21@gmail.com">lorem@gmail.com</a>
+          </li>
+          <li class="show-on-scroll inline-photo">
+            <span class="contact-icon"><i class="fas fa-phone-volume"></i></span>
+            <span class="contact-desc ">947-986-6XXX</span>
+          </li>
+        </ul>
+      </div>
+      <ul class="sci" style="display: flex;">
+        <li class="horizon-photo show-on-scroll"><a href="https://facebook.com"><i style="font-size: 25px;"
+              class="fab fa-facebook-f"></i></a></li>
+        <li class="horizon-photo show-on-scroll"><a href="https://twitter.com"><i style="font-size: 25px;"
+              class="fab fa-twitter"></i></a></li>
+        <li class="horizon-photo show-on-scroll"><a href="https://instagram.com"><i style="font-size: 25px;"
+              class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+    <div class="col-lg-6">
+      <form action="https://docs.google.com/forms/u/7/d/e/1FAIpQLScpnQcUCkH-MH_yaSV_Ph-UUHTbeS8ScBvbnmuSdXkDvSwldQ/formResponse" method = "POST">
+        <div class="form-element">
+          <input type="email" name = "entry.1045781291" class="contact-input show-on-scroll inline-photo" required placeholder="Email Address" />
+        </div>
+        <div class="form-element">
+          <input type="text" name = "entry.2005620554" class="contact-input show-on-scroll inline-photo" required placeholder="Name" />
+        </div>
+        <div class="form-element">
+          <input type="text" name="entry.839337160" class="contact-input show-on-scroll inline-photo" id="" name="" rows="5" cols="50" required placeholder="Enter your message" />
+        </div>
+        <button type ="Submit" style="width: 80%; background-color: #28818d; color: white;" class="btn contact-button show-on-scroll inline-photo">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0/dist/chartjs-plugin-datalabels.min.js"></script>
+<script src="{{url_for('static', filename='js/guide.js')}}"></script>
+<script src="{{url_for('static', filename='js/main.js')}}"></script>
+{% endblock %}

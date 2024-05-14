@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<style>
+    input {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    h1 {
+        font-weight: bold;
+        color: rgb(22, 85, 85);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div>
+    <div>
+        <img style="height: 100vh; width: 100vw; object-fit: cover; position: absolute;z-index: -999;"
+            src="https://images.pexels.com/photos/3394939/pexels-photo-3394939.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="">
+    </div>
+    <!-- <h1 style="margin-top: 80px;">FORGOT PASSWORD PAGE</h1> -->
+    <div
+        style="z-index: 999; top: 30vh; left: 34vw;position: absolute; background-color: white;padding: 40px;border-radius: 15px; box-shadow: 3px 3px 5px #837e7e;">
+        <center>
+            <h1>Change Email Address</h1>
+            <form action="">
+                <input class="contact-input" type="text" placeholder="Enter Old-Email">
+                <br>
+                <input class="contact-input" type="text" placeholder="Enter New-Email">
+                <br>
+                <button style="background-color: #ff7779; color: white;" class="btn contact-button" href="#">Update
+                    Email</button>
+            </form>
+        </center>
+    </div>
+</div>
+{% endblock %}

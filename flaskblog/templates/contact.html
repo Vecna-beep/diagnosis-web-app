@@ -1,0 +1,105 @@
+{%extends "layout.html"%}
+
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/contact.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="container contact-container">
+  <div class="row">
+    <div class="col-lg-5 contact-form-div">
+      <h1 class="contact-heading">CONTACT US</h1>
+      <form action="">
+        <input class="contact-input" type="text" placeholder="Name">
+        <br>
+        <input class="contact-input" type="text" placeholder="Email">
+        <br>
+        <textarea class="contact-input" id="" name="" rows="5" cols="50" placeholder="Message"></textarea>
+        <br>
+        <button class="contact-button" href="#">Submit</button>
+      </form>
+    </div>
+    <div class="col-lg-7" style="margin-right: 0;">
+      <img class="contact-img" src="../static/img/home.png" alt="">
+      <div class="bgsquare"></div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer container-fluid">
+  <div class="wrap-size-lg container-fluid">
+    <div class="row grid-spacing-sm">
+      <div class="footer-div col-lg-4 col-md-2 col-sm-6">
+        <h2 class="footer-heading">MediSphere</h2>
+        <ul class="footer-nav">
+          <li>
+            <p class="footer-quote1">Healthy citizens are the greatest asset any country can have.” – Winston Churchill
+            </p>
+            <p class="footer-quote2">“It is health that is the real wealth, and not pieces of gold and silver.” –
+              Mahatma Gandhi</p>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-div col-lg-2 col-md-2 col-sm-6">
+        <h5 class="footer-subheading">GET IN TOUCH</h5>
+        <ul class="footer-nav">
+          <li>
+            <a rel="nofollow noreferrer" target="_blank" href="#"> About us </a>
+          </li>
+          <li>
+            <a rel="nofollow noreferrer" href="#"> Email us </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-div col-lg-4 col-md-2 col-sm-6">
+        <h5 class="footer-subheading">SUBSCRIBE TO OUR NEWSLETTER</h5>
+        <p class="white-header">Get knowledge of latest medical advancement</p>
+        <form action="">
+          <label class="white-header" for="">Name</label>
+          <br>
+          <input class="footer-form-input" type="text">
+          <br>
+          <label class="white-header" for="">Email</label>
+          <br>
+          <input class="footer-form-input" type="text">
+          <br>
+          <button class="footer-form-button" href="#">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-div col-lg-2 col-md-2 col-sm-6">
+        <h5 class="footer-subheading">EXPLORE</h5>
+        <ul class="footer-nav">
+          <li>
+            <a href="#"> Github Repository </a>
+          </li>
+          <li>
+            <a rel="nofollow noreferrer" target="_blank" href="#"> Guide </a>
+          </li>
+          <li>
+            <a href="#"> Terms of Service </a>
+          </li>
+          <li>
+            <a href="#"> FAQ's </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-div col-lg-2 col-md-2 col-sm-6">
+      <ul class="footer-nav" style="display: flex;">
+        <li>
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter-square"></i> </a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+{% endblock %}

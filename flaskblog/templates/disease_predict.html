@@ -1,0 +1,40 @@
+{%extends "layout.html"%}
+
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/checkup.css')}}">
+{% endblock %}
+
+{%block content%}
+<div class="container col-lg-7" id="prediction"
+    style="margin-top: 25vh; background-color:rgba(250, 248, 248, 0.884); padding: 50px; border-radius: 25px;">
+    <p style="font-size: 30px; color:darkcyan;">There are chances you may have <b
+            style="color: tomato;">{{disease[0]}}</b></p>
+        <!-- NEW -->
+    <p>For treatement, follow the steps given below:- </p>
+        <ol>
+            <li>Copy the name of the diagnosed disease.</li>
+            <li>Pass the command to our medibot(Zen) - Give me treatement for [Diagnosed disease].</li>
+            <li>You will be provided with the treatement for the diagnosed disease.</li>
+            <li>You can also have conversation with Zen. Enjoy!</li>
+        </ol>
+    <br>
+    <p style="color:#ff4449;">Attention :This is just a diagnosis please consult your primary care physician.</p>
+</div>
+<div class="cir1"></div>
+<div class="cir2"></div>
+<div class="cir3"></div>
+<div class="cir4"></div>
+<div class="cir5"></div>
+<div class="cir6"></div>
+<script type="text/javascript">
+    (function (d, m) {
+        var kommunicateSettings =
+            { "appId": "2b0005185b33cbade7a782a9b36b320b3", "popupWidget": true, "automaticChatOpenOnNavigation": true };
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+{%endblock%}

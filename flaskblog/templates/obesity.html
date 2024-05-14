@@ -1,0 +1,424 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/yoga.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="container main-div" style="margin-top: 150px; margin-bottom: 150px; padding: 50px;">
+    <h1>OBESITY</h1>
+    <h3>What is Obesity?</h3>
+    <p>Obesity is a complex disease involving an excessive amount of body fat. Obesity isn't just a cosmetic concern.
+        It's a medical problem that increases the risk of other diseases and health problems, such as heart disease,
+        diabetes, high blood pressure and certain cancers.</p>
+    <p>There are many reasons why some people have difficulty losing weight. Usually, obesity results from inherited,
+        physiological and environmental factors, combined with diet, physical activity and exercise choices.</p>
+    <p>The good news is that even modest weight loss can improve or prevent the health problems associated with obesity.
+        A healthier diet, increased physical activity and behavior changes can help you lose weight. Prescription
+        medications and weight-loss procedures are additional options for treating obesity.</p>
+
+    <h3>Symptoms</h3>
+    <p>Body mass index (BMI) is often used to diagnose obesity. To calculate BMI, multiply weight in pounds by 703,
+        divide by height in inches and then divide again by height in inches. Or divide weight in kilograms by height in
+        meters squared.</p>
+    <table>
+        <thead>
+            <th>BMI</th>
+            <th>Weight status</th>
+        </thead>
+        <tr>
+            <td>Below 18.5</td>
+            <td>Underweight</td>
+        </tr>
+        <tr>
+            <td>18.5-24.9</td>
+            <td>Normal</td>
+        </tr>
+        <tr>
+            <td>25.0-29.9</td>
+            <td>Overweight</td>
+        </tr>
+        <tr>
+            <td>30.0 and higher</td>
+            <td>Obesity</td>
+        </tr>
+    </table>
+    <p>Asians with BMI of 23 or higher may have an increased risk of health problems.</p>
+    <p>For most people, BMI provides a reasonable estimate of body fat. However, BMI doesn't directly measure body fat,
+        so some people, such as muscular athletes, may have a BMI in the obesity category even though they don't have
+        excess body fat.</p>
+    <p>Many doctors also measure a person's waist circumference to help guide treatment decisions. Weight-related health
+        problems are more common in men with a waist circumference over 40 inches (102 centimeters) and in women with a
+        waist measurement over 35 inches (89 centimeters).</p>
+    <h3>When to see a doctor</h3>
+    <p>If you're concerned about your weight or weight-related health problems, ask your doctor about obesity
+        management. You and your doctor can evaluate your health risks and discuss your weight-loss options.</p>
+    <h3>Causes</h3>
+    <p>Although there are genetic, behavioral, metabolic and hormonal influences on body weight, obesity occurs when you
+        take in more calories than you burn through normal daily activities and exercise. Your body stores these excess
+        calories as fat.</p>
+    <p>In the United States, most people's diets are too high in calories — often from fast food and high-calorie
+        beverages. People with obesity might eat more calories before feeling full, feel hungry sooner, or eat more due
+        to stress or anxiety.</p>
+    <p>Many people who live in Western countries now have jobs that are much less physically demanding, so they don't
+        tend to burn as many calories at work. Even daily activities use fewer calories, courtesy of conveniences such
+        as remote controls, escalators, online shopping and drive-through banks.</p>
+    <h3>Risk factors</h3>
+    <p>Obesity usually results from a combination of causes and contributing factors:</p>
+    <h5>Family inheritance and influences</h5>
+    <p>The genes you inherit from your parents may affect the amount of body fat you store, and where that fat is
+        distributed. Genetics may also play a role in how efficiently your body converts food into energy, how your body
+        regulates your appetite and how your body burns calories during exercise.</p>
+    <p>Obesity tends to run in families. That's not just because of the genes they share. Family members also tend to
+        share similar eating and activity habits.</p>
+    <h5>Lifestyle choices</h5>
+    <ul style="color: black; list-style: disc;">
+        <li>Unhealthy diet. A diet that's high in calories, lacking in fruits and vegetables, full of fast food, and
+            laden with high-calorie beverages and oversized portions contributes to weight gain.</li>
+        <li>Liquid calories. People can drink many calories without feeling full, especially calories from alcohol.
+            Other high-calorie beverages, such as sugared soft drinks, can contribute to significant weight gain.</li>
+        <li>Inactivity. If you have a sedentary lifestyle, you can easily take in more calories every day than you burn
+            through exercise and routine daily activities. Looking at computer, tablet and phone screens is a sedentary
+            activity. The number of hours spent in front of a screen is highly associated with weight gain.</li>
+    </ul>
+    <h5>Certain diseases and medications</h5>
+    <p>In some people, obesity can be traced to a medical cause, such as Prader-Willi syndrome, Cushing syndrome and
+        other conditions. Medical problems, such as arthritis, also can lead to decreased activity, which may result in
+        weight gain.</p>
+    <p>Some medications can lead to weight gain if you don't compensate through diet or activity. These medications
+        include some antidepressants, anti-seizure medications, diabetes medications, antipsychotic medications,
+        steroids and beta blockers.</p>
+
+    <h5>Social and economic issues</h5>
+    <p>Social and economic factors are linked to obesity. Avoiding obesity is difficult if you don't have safe areas to
+        walk or exercise. Similarly, you may not have been taught healthy ways of cooking, or you may not have access to
+        healthier foods. In addition, the people you spend time with may influence your weight — you're more likely to
+        develop obesity if you have friends or relatives with obesity.</p>
+
+    <h5>Age</h5>
+    <p>Obesity can occur at any age, even in young children. But as you age, hormonal changes and a less active
+        lifestyle increase your risk of obesity. In addition, the amount of muscle in your body tends to decrease with
+        age. Generally, lower muscle mass leads to a decrease in metabolism. These changes also reduce calorie needs and
+        can make it harder to keep off excess weight. If you don't consciously control what you eat and become more
+        physically active as you age, you'll likely gain weight.</p>
+
+    <h5>Other factors</h5>
+    <ul style="color: black; list-style: disc;">
+        <li>Pregnancy. Weight gain is common during pregnancy. Some women find this weight difficult to lose after the
+            baby is born. This weight gain may contribute to the development of obesity in women.</li>
+        <li>Quitting smoking. Quitting smoking is often associated with weight gain. And for some, it can lead to enough
+            weight gain to qualify as obesity. Often, this happens as people use food to cope with smoking withdrawal.
+            In the long run, however, quitting smoking is still a greater benefit to your health than is continuing to
+            smoke. Your doctor can help you prevent weight gain after quitting smoking.</li>
+        <li>Lack of sleep. Not getting enough sleep or getting too much sleep can cause changes in hormones that
+            increase appetite. You may also crave foods high in calories and carbohydrates, which can contribute to
+            weight gain.</li>
+        <li>Stress. Many external factors that affect mood and well-being may contribute to obesity. People often seek
+            more high-calorie food when experiencing stressful situations.</li>
+        <li>Microbiome. Your gut bacteria are affected by what you eat and may contribute to weight gain or difficulty
+            losing weight.</li>
+    </ul>
+
+    <p>Even if you have one or more of these risk factors, it doesn't mean that you're destined to develop obesity. You
+        can counteract most risk factors through diet, physical activity and exercise, and behavior changes.</p>
+
+
+    <h1>YOGA ASANAS FOR PREVENTING OBESITY</h1>
+    <div class="conatiner first">
+        <h2>Vajrasana</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="../static/img/vajrasana.jpeg" style="height: 300px; width: 100%;" alt="">
+            </div>
+            <div class="col-lg-6">
+                <p>Vajrasana pose is a simple sitting yoga pose. Its name comes from the Sanskrit word vajra, which
+                    means thunderbolt or diamond.</p>
+                <p>For this pose, you kneel and then sit back on your legs to take the weight off your knees. Breathing
+                    and meditative exercises are often done in this position, which is said to help your body become as
+                    strong as a diamond.</p>
+                <p>Keep reading to learn how to do Vajrasana pose and the many positive benefits it provides.</p>
+            </div>
+        </div>
+        <h3>How to do the Vajrasana pose</h3>
+        <p>You can get into the Vajrasana pose in six simple steps:</p>
+        <ol>
+            <li>Start by kneeling on the floor. Consider using a yoga mat for comfort.</li>
+            <li>Pull your knees and ankles together and point your feet in line with your legs. The bottoms of your feet
+                should face upward with your big toes touching.</li>
+            <li>Exhale as you sit back on your legs. Your buttocks will rest on your heels and your thighs will rest on
+                your calves.</li>
+            <li>Put your hands on your thighs and adjust your pelvis slightly backward and forward until you’re
+                comfortable.</li>
+            <li>Breathe in and out slowly as you position yourself to sit up straight by straightening your spine. Use
+                your head to pull your body upward and press your tailbone toward the floor.</li>
+            <li>Straighten your head to gaze forward with your chin parallel to the floor. Position your hands palms
+                down on your thighs with your arms relaxed.</li>
+        </ol>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>Benefits of Vajrasana</h3>
+                <ul style="color: black; list-style: disc;">
+                    <li>aiding in digestion</li>
+                    <li>relieving or preventing constipation</li>
+                    <li>strengthening pelvic muscles</li>
+                    <li>helping keep the mind calm and stable</li>
+                    <li>curing digestive acidity and gas formation</li>
+                    <li>helping to relieve knee pain</li>
+                    <li>strengthening thigh muscles</li>
+                    <li>helping to relieve back pain</li>
+                    <li>helping in treatment of urinary problems</li>
+                    <li>increasing blood circulation to the lower abdominal region</li>
+                    <li>helping to reduce obesity</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <iframe width="100%" height="400px" src="https://www.youtube.com/embed/3ILEYJOtHgM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <h3>Precautions</h3>
+        <p>Before starting a yoga program, consult with a doctor. They can offer advice on how yoga will impact your
+            current health and suggest ways to avoid potential problems.</p>
+        <p>Yoga practitioners suggest avoiding Vajrasana if you have:</p>
+        <ul style="color: black; list-style: disc;">
+            <li>a knee problem or have recently undergone knee surgery</li>
+            <li>a spinal cord condition, especially with the lower vertebrae</li>
+            <li>intestinal ulcers, a hernia, or any other intestinal problems such as an ulcer or hernia</li>
+        </ul>
+        <p>If you’re pregnant, ask your doctor about Vajrasana. Some feel it should be avoided. Others feel it’s OK if
+            you keep your knees apart to avoid stressing your abdomen. Your doctor is familiar with your situation and
+            can give you a personalized recommendation.</p>
+    </div>
+
+    <div class="conatiner second">
+        <h2>Urdhva Hastasana</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="../static/img/hastasana.jpeg" style="height: 300px; width: 100%;" alt="">
+            </div>
+            <div class="col-lg-6">
+                <p>Urdhva Hastasana is a standing pose that refreshes the entire body by boosting energy levels. Whether
+                    you are a trained yogi, an aspirant, or even a novice, everyone performs this pose on a daily basis.
+                </p>
+                <p>Every time you get up from long seated hours or wake up extending the arms overhead and stretching
+                    the entire body from toes to fingertips. This subconscious move re-energizes the body and forms
+                    Urdhva Hastasana.</p>
+                <p>Getting into the meaning, urdhva hastasana refers to “Raised Hands Pose”. This gentle stretch
+                    regenerates energetic spark and provides various therapeutic perks.</p>
+            </div>
+        </div>
+        <h3>How to do Urdhva Hasatasana / Upward Hands Pose</h3>
+        <ol>
+            <li>Stand in <a href="https://adventureyogaonline.com/tadasana-benefits/" target="_blank"
+                    aria-label="undefined (opens in a new tab)" rel="noreferrer noopener">Tadasana</a>.</li>
+            <li><strong>Stretch your arms up</strong> overhead. Have your hands shoulder-distance apart, and palms
+                facing each other. Look straight ahead.</li>
+            <li>Stretch your <strong>arms straight</strong>, and straight up, from your shoulders.</li>
+            <li><strong>Tone your belly</strong> by moving the space around your navel back towards your spine (Uddiyana
+                Bandha).</li>
+            <li>Watch that your lower front ribs do not poke forward. <strong>Draw the ribs in</strong> and slightly
+                down toward your belly.</li>
+            <li>Bring your <strong>wrists over your shoulders</strong>, your shoulders over your hips, and your hips
+                over your ankles.</li>
+            <li>Even though your shoulder blades will lift a bit when you stretch your arms overhead, <strong>draw them
+                    down your back</strong> a little, and widen across your collarbones.</li>
+            <li>You can practice the pose with your <strong>fingers spread or fingers together</strong>. I generally
+                leave this up to the student to do what feels best in their body. </li>
+            <li><strong>This is Urdhva Hastasana.</strong></li>
+            <li>To come out, lower your arms to your sides and return to Tadasana.</li>
+        </ol>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>Benefits of Urdhva Hastasana</h3>
+                <p>The main physical benefits of Urdhva Hastasana include:</p>
+                <ul style="color: black; list-style: disc;">
+                    <li>Strengthen the legs.</li>
+                    <li>Strengthen the triceps.</li>
+                    <li>Both poses stretch the shoulders.</li>
+                    <li>Tone the abdomen and hips.</li>
+                    <li>Strengthen the <a aria-label="undefined (opens in a new tab)"
+                            href="https://www.shape.com/fitness/tips/what-is-posterior-chain-exercises" target="_blank"
+                            rel="noreferrer noopener">posterior chain</a> (back muscles, butt, hamstrings).</li>
+                    <li>Help improve balance.</li>
+                    <li>Help correct posture.</li>
+                    <li>Stretch out the entire front torso.</li>
+                    <li>Help to stretch the spine which can help improve posture.</li>
+                    <li>They provide a full body stretch.</li>
+                    <li>Help to prepare the spine for deeper stretches, back bends, and twists.</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/adHHxMGKbkI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <h3 id="3-precautions-amp-contraindications">Precautions &amp; Contraindications</h3>
+        <p>Remember that while yoga is for everyone, not all poses are for all people!</p>
+        <p>If your body requires some extra support in this pose, see the Modifications section below for ideas on how
+            to do these poses safely.</p>
+        <ul style="color: black; list-style: disc;">
+            <li>If you become <strong>dizzy or light headed</strong>, lower your arms.</li>
+            <li>Avoid these poses if you have a <strong>shoulder injury</strong>. Take the time needed to heal fully.
+            </li>
+            <li>If you have a <strong>headache or migraine</strong>, these poses might make it worse. Practice with
+                caution.</li>
+            <li>If you have <strong>high blood pressure</strong>, keep your arms by your side.</li>
+            <li>These poses can be challenging if you have <strong>vertigo</strong>. Practice with your feet as wide as
+                you need to find balance.</li>
+            <li>If you <strong>easily hyperextend your knees</strong>, extra care should be taken to engage your
+                hamstrings so that you protect your knees.</li>
+            <li>If <strong>you are pregnant</strong>, you may want to keep your feet hip-distance apart, or wider.</li>
+        </ul>
+    </div>
+
+    <div class="conatiner first">
+        <h2>Ardha Matsyendrasana (Half Spinal Twist)</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="../static/img/ardha.jpeg" style="height: 300px; width: 100%;" alt="">
+            </div>
+            <div class="col-lg-6">
+                <p>Ardha Matsyendrasana also known as Vakrasana is seated spinal twist and falls into the category of
+                    intermediate yoga poses yet its simpler variation can be practiced by beginners as well. Half Spinal
+                    Twist also acknowledged as Half Lord of the Fishes Pose is one of those yoga poses that have quite
+                    complex steps. Its new practitioners often end up getting confused while following the steps. Before
+                    you practice, ensure you are aware of the steps very well. It has several variations out of which we
+                    have selected two to be mentioned in this article today. So let’s get to know them after splitting
+                    the Sanskrit name Ardha Matsyendrasana and revealing the meaning of each word.</p>
+            </div>
+        </div>
+        <h3>How to do Ardha Matsyendrasana (Half Spinal Twist)</h3>
+        <p>Starting Position: Sit straight, keeping the legs outstretched in front of the body.</p>
+        <ol>
+            <li>Bend the right leg over the left leg, placing the right foot on the outside of the left knee, keep the
+                toes of right foot face forward.</li>
+            <li>Bend the left leg, bringing the left foot near the right buttock. keep left foot’s outside edge in
+                contact with the floor.</li>
+            <p>Position the legs first:</p>
+            <li>There is a space between your chest and right knee. Pass the left arm through that space bringing the
+                left hand close to the right foot.</li>
+            <li>Grab a firm hold of the right foot with the left hand bringing the right knee closer to left armpit. Try
+                to keep the spine erect.</li>
+            <p>Make the twist</p>
+            <li>Slowly twist the trunk to the right along with moving the neck.</li>
+            <li>Wrap the right arm around the waist placing the fingers on the left inner thigh.</li>
+            <li>Use the left arm pressing it against the right leg to move the trunk as far as you can comfortably.</li>
+            <li>Gaze straight over the right shoulder at a fixed point. Relax the body taking deep and slow breaths.
+            </li>
+            <li>To return, reverse the movements one by one. Repeat on the opposite side.</li>
+        </ol>
+        <p>Practice once on both the sides by interchanging the position of arms and legs.</p>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>Benefits of Ardha Matsyendrasana (Half Spinal Twist)</h3>
+                <ul>
+                    <li>Tones the spinal nerves, stretches back muscles and contracts the abdomen at the same time.</li>
+                    <li>Gives relief in lumbago and reduces muscle spasms and cramps.</li>
+                    <li>Beneficial for people suffering from asthma or other respiratory diseases.</li>
+                    <li>Massages and improves the functioning of abdominal organs, especially toning the liver, pancreas
+                        and the kidneys.</li>
+                    <li>Alleviates digestive and gastric problems. Stimulates appetite.</li>
+                    <li>Regulates adrenaline in the body by balancing the secretions of the adrenal</li>
+                    <li>Useful in getting rid of obesity as the regular practice of this asana removes excess body fat.
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/51EqCa6ZGCw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <h3 id="3-precautions-amp-contraindications">Precautions & Contraindications</h3>
+            <ul>
+                <li>Perform the Half Spinal Twist after practicing forward and backward bending yoga pose.</li>
+                <li>Neither twist the torso all of a sudden nor overstretch it as that way you may strain the muscles.
+                </li>
+                <li>Practice Half Spinal Twist in the presence of a competent yoga trainer if you suffer from a hernia,
+                    heart disease, ulcer or</li>
+                <li>Avoid practicing Ardha Matsyendrasana in case of sciatica or slipped disc.</li>
+                <li>This pose is not recommended to be practiced by pregnant women.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="conatiner second">
+        <h2>Trikonasana (Triangle Pose) </h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="../static/img/trikonasana.jpeg" style="height: 300px; width: 100%;" alt="">
+            </div>
+            <div class="col-lg-6">
+                <p>The Sanskrit name Trikonasana is derived from two words, Trikona meaning Triangle and Asana meaning
+                    Posture. It’s quite logical to start wondering the shape of a triangle on hearing the name Triangle
+                    Pose. Body’s posture seems similar to the shape of a triangle in the final position of this pose.
+                    Trikonasana is extremely beneficial for strengthening the joints and stretching the muscles of the
+                    body. Apart from this, Trikonasana has a lot of other benefits which one can experience on
+                    practicing it regularly. But first, let’s begin by knowing the steps to practice Trikonasana.</p>
+            </div>
+        </div>
+        <h3>How to do Trikonasana (Triangle Pose)</h3>
+        <p>Starting Position: Stand upright keeping the spine erect, head straight, feet together with big toes and
+            heels slightly touching each other. Hands to the side of the body. The weight of the body should neither be
+            on the heels nor on the toes but distributed evenly on both of them. Relax and take deep breaths.</p>
+        <ol>
+            <li><span>Move the legs 3-4 feet distance apart. Raise both the arms straight out to the sides, in line with
+                    the shoulders and parallel to the floor with the palms facing downwards.</span></li>
+            <li><span>Move the right foot to the outside direction. Turn the left foot slightly to the inward direction.
+                    The knees must remain straight throughout the practice.</span></li>
+            <li><span>Slowly begin to bend the trunk towards the right side. Make sure the body doesn’t go in the
+                    forward direction.</span></li>
+            <li><span>Once the trunk is completely bent the hand must be close to the right ankle with the fingers
+                    slightly touching the floor.&nbsp;</span></li>
+            <li><span>Ideally the right palm rest on the floor. Avoid forcing this position as with regular practice it
+                    comes easily on the floor.</span></li>
+            <li><span>Stretch the left arm vertically. Move the head in the upward direction and look straight.</span>
+            </li>
+            <li><span>Hold the position for a minute or half or even lesser in the beginning. Gradually increasing the
+                    time as you begin to feel more comfortable.</span></li>
+            <li><span>To return, lift the arms first and then slowly move the trunk back in the upright position. Relax
+                    the body.</span></li>
+        </ol>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>Benefits of Urdhva Hastasana</h3>
+                <ul>
+                    <li><span>Gives strength to the ankles and knees.</span></li>
+                    <li><span>Tones and massages the pelvic area and the reproductive organs.</span></li>
+                    <li><span>Alleviates muscle cramps and helps in reducing the back and neck pain.</span></li>
+                    <li><span>Stretches the back, neck, thighs, legs, arms </span>and<span> shoulders. Helps in reducing
+                            waistline fat.</span></li>
+                    <li><span>Highly beneficial in getting rid of indigestion, constipation, acidity and gastric
+                            troubles.</span></li>
+                    <li><span>Gives an intense stretch to the spine and enhances its Strengthens the spinal
+                            nerves.</span></li>
+                    <li><span>Removes the stiffness of the neck and shoulders. Beneficial in correcting the misalignment
+                            of the shoulders.</span></li>
+                    <li><span>Helpful in getting rid of anxiety and depression as it stimulates the whole functioning of
+                            the nervous system.</span></li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/S6gB0QHbWFE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <h3 id="3-precautions-amp-contraindications">Precautions & Contraindications</h3>
+        <ul>
+            <li><span>Don’t overstretch the body while practicing this asana as it may cause unnecessary pain or
+                    injury.</span></li>
+            <li><span>If the neck begins to hurt in the upward direction, slightly lower it.</span></li>
+            <li><span>Avoid practicing this asana in case of severe pain in the neck, back or shoulders.</span></li>
+            <li><span>People suffering from any of these conditions should avoid practicing this asana: any kind of
+                    injury in the knee, arthritis, vertigo, spinal disorders, high blood pressure, breathing trouble,
+                    migraine, heart problem or cervical spondylitis.</span></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

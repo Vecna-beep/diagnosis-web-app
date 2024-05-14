@@ -1,0 +1,156 @@
+.grey-container{
+    height: 100vh;
+    background-color: #74c1d1;
+    color: white;
+    padding-top: 0;
+}
+
+.col-lg-6{
+    margin-right: 0;
+}
+
+.home-heading{
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.home-desc{
+    padding: 20px 20px 25px 0;
+}
+
+.site-char{
+    padding: 10%;
+}
+
+.change-btn{
+    background-color: #ff4449;
+    border: solid 2px white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    margin: 40px 10px 0 0;
+    font-size: 20px;
+}
+
+.change-btn:hover{
+    color: #ff4449;
+    background-color: white;
+    text-decoration: none;
+    border: solid 2px #ff4449;
+}
+.change-btn2{
+    background-color: white;
+    border: solid 2px #ff4449;
+    color: #ff4449;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    margin: 40px 10px 0 0;
+    font-size: 20px;
+}
+
+.change-btn2:hover{
+    color: white;
+    background-color: #ff4449;
+    text-decoration: none;
+}
+
+.char-img{
+    height: 100%; 
+    width: 100%;
+}
+
+input, textarea{
+    width: 80%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: grey;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.footer-link{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+.footer-link:hover{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.inline-photo {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 2s .25s cubic-bezier(0,1,.3,1),
+                opacity .3s .25s ease-out;
+    will-change: transform, opacity;
+}
+
+.inline-photo.is-visible {
+    opacity: 1;
+    transform: rotateY(0);
+}
+
+.horizon-photo {
+    opacity: 0;
+    transform: translateY(50px) rotateZ(-50deg);
+    transition: transform 3s .25s cubic-bezier(0,1,.3,1),
+                opacity .3s .25s ease-out;
+    will-change: transform, opacity;
+}
+
+.horizon-photo.is-visible {
+    opacity: 1;
+    transform: translateY(0) rotateZ(0deg);
+}
+
+.fa-check{
+    color: #ff4449;
+    margin-right: 10px;
+}
+
+h1, h2, h3{
+    color: #3e7b83;
+    font-weight: bolder;
+}
+
+.underline {
+border-bottom: 2px solid currentColor;
+display: inline-block;
+line-height: 1.5;
+}
+
+.bottom-container li{
+  margin: 20px 0;
+}
+
+.inner-div3{
+    animation: mymove 2s 1;
+}
+
+.inner-div2{
+    animation: mymove2 1s 1;
+}
+
+.inner-div{
+    animation: mymove3 1s 1;
+}
+
+@keyframes mymove {
+    from {transform: translateX(-300px); opacity: 0}
+    to {transform: translateX(0); opacity: 1}
+}
+
+@keyframes mymove2 {
+    from {transform: translateX(-200px); opacity: 0}
+    to {transform: translateX(0); opacity: 1}
+}
+
+@keyframes mymove3 {
+    from {transform: translateX(-300px); opacity: 0}
+    to {transform: translateX(0); opacity: 1}
+}

@@ -1,0 +1,82 @@
+{%extends "layout.html"%}
+
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/bulletin.css')}}">
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+{% endblock %}
+
+{% block content %}
+<div id="custom-modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content2" style="width: 100%;">
+      <div class="modal-header2" style="display: block;">
+        <h2 class="modal-title" style="margin-top: 0;">Health Trivia</h2>
+        <button type="button" class="popup-btn-close" data-dismiss="modal"
+          style="border:none; outline: none; top: -10px;">&times;</button>
+      </div>
+      <div class="container" style="padding: 0 40px 20px; text-align: center;">
+        <h4 class="fact-heading">General Health Facts</h4>
+        <div id="factDisplay"></div>
+        <div class="row">
+          <div class="col-lg-6">
+            <h4 class="fact-heading">Mental Health Facts</h4>
+            <div class="fact-content" id="mentalfactDisplay"></div>
+            <h4 class="fact-heading">Healthy Food Facts</h4>
+            <div class="fact-content" id="foodfactDisplay"></div>
+            <h4 class="fact-heading">Health and Fitness Facts</h4>
+            <div class="fact-content" id="fitnessfactDisplay"></div>
+          </div>
+          <div class="col-lg-6">
+            <h4 class="fact-heading">Health and Hydration Facts</h4>
+            <div class="fact-content" id="hydrationfactDisplay"></div>
+            <h4 class="fact-heading">Good Health Practices</h4>
+            <div class="fact-content" id="practicesfactDisplay"></div>
+            <h4 class="fact-heading">Random Health Facts</h4>
+            <div class="fact-content" id="randomfactDisplay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<h1 style="margin-top: 150px; text-align: center;">World-Wide Health Related News</h1>
+
+<div style="display: flex; text-align: center; flex-direction: column;">
+  <i class="down-arrow fas fa-angle-down" style="font-size: 50px;"></i>
+  <i class="down-arrow fas fa-angle-down" style="font-size: 40px;"></i>
+  <i class="down-arrow fas fa-angle-down" style="font-size: 30px;"></i>
+</div>
+<div class="container">
+  {% for new, desc, i, u in context %}
+  <div class="container show-on-scroll inline-photo"
+    style="padding: 40px; box-shadow: 3px 3px 10px #969696; margin: 20px 0; background-color: white;">
+    <div class="row">
+      <div class="col-lg-3">
+        <img src="{{i}}" alt="" style="height: 100%; width: 100%;">
+      </div>
+      <div class="col-lg-9">
+        <h4>News: </h4>
+        <p>{{ new }}</p>
+        <h4>Description: </h4>
+        <p>{{ desc }}
+          <a href="{{u}}">Read More</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<h1 style="margin: 50px 0; text-align: center;">Nearby Medical Centers</h1>
+<div style="display: flex; text-align: center; flex-direction: column;">
+  <i class="down-arrow fas fa-angle-down show-on-scroll inline-photo" style="font-size: 50px;"></i>
+  <i class="down-arrow fas fa-angle-down show-on-scroll inline-photo" style="font-size: 40px;"></i>
+  <i class="down-arrow fas fa-angle-down show-on-scroll inline-photo" style="font-size: 30px;"></i>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<div id='map'></div>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<script src="{{url_for('static', filename='js/map.js')}}"></script>
+<script src="{{url_for('static', filename='js/fact.js')}}"></script>
+<script src="{{url_for('static', filename='js/popup.js')}}"></script>
+<script src="{{url_for('static', filename='js/guide.js')}}"></script>
+{% endblock %}

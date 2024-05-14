@@ -1,0 +1,124 @@
+{%extends "layout.html"%}
+
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/account.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-3 col-sm-4 col-md-2 sidebar">
+      <div class="sidebar-item">
+        <div class="make-me-sticky">
+          <ul class="nav_list" style="padding-left: 0px;">
+            <h2 class="sidebar-heading">Quick Links</h2>
+            <li class="list-item">
+              <a class="sidebar-element" rel="nofollow noreferrer" href="{{url_for('about')}}"> About us </a>
+            </li>
+            <li class="list-item">
+              <a class="sidebar-element" rel="nofollow noreferrer" href="mailto:punerva21@gmail.com"> Email us </a>
+            </li>
+            </>
+            <li class="list-item">
+              <a class="sidebar-element" rel="nofollow noreferrer" href="{{url_for('guideline')}}"> Guide </a>
+            </li>
+            <li class="list-item">
+              <a class="sidebar-element" href="{{url_for('terms')}}"> Terms of Service </a>
+            </li>
+            <li class="list-item">
+              <a class="sidebar-element" href="{{url_for('faq')}}"> FAQ's </a>
+            </li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <h2 class="sidebar-heading">Follow us: </h2>
+            <ul class="footer-nav">
+              <li>
+                <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com"><i class="fab fa-twitter-square"></i> </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-9 col-sm-8 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <div class="row placeholders profile-container">
+        <div class="col-xs-6 col-sm-3 placeholder">
+          <img class="profile-pic" src="../static/img/default.jpeg" alt="">
+          <!-- NEW -->
+          <!-- {% if current_user.image_file == None %}
+                <img class="img-rounded" src="{{ url_for('static',filename='img/default.jpeg') }}">
+              {% else %}
+                <img class="img-rounded" src="{{ url_for('static',filename=current_user.image_file)}}">
+              {% endif %}
+          <img class="profile-pic" src="{{ url_for('static',filename=current_user.image_file)}}" align="left"> -->
+        </div>
+        <div class="info">
+          <h1 class="page-header">Welcome, {{ current_user.username }}</h1>
+          <p class="account-email">Email: {{ current_user.email }}</p>
+          <a class="change-btn" href="{{url_for('change_email')}}">Change Email</a>
+          <a class="change-btn" href="{{url_for('change_password')}}">Change Password</a>
+        </div>
+      </div>
+
+      <h2 class="sub-header">CheckUp History</h2>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Symptom 1</th>
+              <th>Symptom 2</th>
+              <th>Symptom 3</th>
+              <th>Symptom 4</th>
+              <th>Symptom 5</th>
+              <th>Diagnosis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Skin rash</td>
+              <td>Skin irritation</td>
+              <td>Nodal Skin Eruptions</td>
+              <td>Burning Micturition</td>
+              <td>fatigue</td>
+              <td>Fungal Infection</td>
+            </tr>
+            <tr>
+              <td>Belly Pain</td>
+              <td>Abnormal Menstruation</td>
+              <td>Weight gain</td>
+              <td>Mood Swings</td>
+              <td>Fatigue</td>
+              <td>Typhoid</td>
+            </tr>
+            <tr>
+              <td>Shivering</td>
+              <td>Loss of Appetite</td>
+              <td>Chills</td>
+              <td>Restlessness</td>
+              <td>Nausea</td>
+              <td>Allergy</td>
+            </tr>
+            <tr>
+              <td>Waterin from eyes</td>
+              <td>Restlessness</td>
+              <td>Sinus Pressure</td>
+              <td>fatigue</td>
+              <td>Continuous Sneezing</td>
+              <td>Common Cold</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
